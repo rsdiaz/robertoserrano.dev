@@ -18,38 +18,21 @@
                 </p>
               </div>
             </div>
-            <div class="section pt-2 pb-2">
-              <div class="container">
-                <p class="has-text-centered has-text-grey is-italic">
-                  {{ article.description }}
-                </p>
-              </div>
-            </div>
           </div>
         </header>
         <!-- <img class="image" :src="article.picture" :alt="article.alt" /> -->
-        <div class="container">
-          <div class="box has-background-info-light">
-            <h3 class="title is-5">Contenido</h3>
-            <nav>
-              <ul>
-                <li
-                  v-for="link of article.toc"
-                  :key="link.id"
-                  :class="{
-                    'has-text-weight-bold': link.depth === 2,
-                    'pl-2 has-text-weight-normal': link.depth === 3,
-                  }"
-                >
-                  <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <!-- markdown content -->
-          <nuxt-content :document="article" />
-          <!-- content author component -->
-          <author :author="article.author" />
+        <div class="blog-content">
+          <BlogDescription :article="article" />
+          <section class="section content">
+            <hr />
+            <!-- markdown content -->
+            <nuxt-content :document="article" />
+            <hr />
+            <TwitterShare :article="article" />
+            <Comments />
+            <!-- content author component -->
+            <Author :author="article.author" />
+          </section>
         </div>
       </article>
     </div>
@@ -156,14 +139,28 @@ export default {
     color: $white-ter;
   }
 }
+
+section.content {
+  padding: 0 1.5rem;
+}
+
+.card.author-card {
+  margin: 0;
+}
+
 .nuxt-content {
   h2,
   h3,
   h4 {
     font-weight: bold;
     margin-top: 0.5rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 1.25rem;
     line-height: 1.25;
+  }
+  p {
+    margin-bottom: 1.563rem;
+    font-size: 1.125rem;
+    line-height: 1.833em;
   }
 }
 .nuxt-content h2 {
@@ -172,9 +169,7 @@ export default {
 .nuxt-content h3 {
   font-size: 1.5rem;
 }
-.nuxt-content p {
-  margin-bottom: 20px;
-}
+
 .nuxt-content-highlight {
   margin: 1.2rem 0;
 }
