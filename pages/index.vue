@@ -63,7 +63,8 @@ export default {
     },
   },
   head: {
-    title: 'Mi blog con Nuxtjs',
+    title:
+      '🙋‍♂️ Roberto Serrano | 💻 Desarrollador Web en Tarragona | 🌍 robertoserrano.dev',
   },
 }
 </script>

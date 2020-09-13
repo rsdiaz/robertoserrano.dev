@@ -5,7 +5,7 @@
         <li class="is-inline-block">
           <a
             class="navbar-item"
-            href="https://github.com/jgthms/bulma"
+            href="https://github.com/rsdiaz"
             target="_blank"
           >
             <span class="icon">
@@ -16,7 +16,7 @@
         <li class="is-inline-block">
           <a
             class="navbar-item"
-            href="https://twitter.com/jgthms"
+            href="https://twitter.com/Rovbeat"
             target="_blank"
           >
             <span class="icon">
@@ -27,7 +27,7 @@
         <li class="is-inline-block">
           <a
             class="navbar-item"
-            href="https://github.com/jgthms/bulma"
+            href="https://linkedin.com/in/roberto-serrano-diaz-grande-551a23b1"
             target="_blank"
           >
             <span class="icon">
@@ -38,7 +38,7 @@
         <li class="is-inline-block">
           <a
             class="navbar-item"
-            href="https://github.com/jgthms/bulma"
+            href="mailto:robertoserrano83@gmail.com"
             target="_blank"
           >
             <span class="icon">
