@@ -2,7 +2,11 @@
   <div>
     <input v-model="query" type="search" autocomplete="off" />
     <ul v-if="articles.length">
-      <li v-for="article of articles" :key="article.slug">
+      <li
+        v-for="article of articles"
+        :key="article.slug"
+        @click.prevent="cleanInput"
+      >
         <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
           {{ article.title }}
         </NuxtLink>
@@ -31,6 +35,11 @@ export default {
         .limit(12)
         .search(query)
         .fetch()
+    },
+  },
+  methods: {
+    cleanInput() {
+      this.query = null
     },
   },
 }
