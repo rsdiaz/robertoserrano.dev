@@ -1,7 +1,6 @@
 <template>
   <section class="section blog-page has-background-white-ter">
     <h1 class="title is-1 has-text-centered">Blog</h1>
-    <Search />
     <div class="columns content blog-list-wrapper">
       <div
         v-for="(article, index) in articles"

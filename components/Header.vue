@@ -29,10 +29,10 @@
         <div class="navbar-start">
           <nuxt-link to="/" :class="'navbar-item tg-menu'">Home</nuxt-link>
           <nuxt-link to="/blog" :class="'navbar-item tg-menu'">Blog</nuxt-link>
-          <nuxt-link to="/blog" :class="'navbar-item tg-menu'">
+          <nuxt-link to="/sobre-mi" :class="'navbar-item tg-menu'">
             Sobre mí
           </nuxt-link>
-          <nuxt-link to="/blog" :class="'navbar-item tg-menu'">
+          <nuxt-link to="/contacto" :class="'navbar-item tg-menu'">
             Contacto
           </nuxt-link>
         </div>

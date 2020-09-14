@@ -13,6 +13,7 @@
       </div>
       <div class="hero is-fullheight column column-right is-primary">
         <div class="container">
+          <input id="theme-google" type="checkbox" :model="nightMode" />
           <h1
             id="home-title"
             class="title is-1 is-spaced has-text-centered has-text-white"
@@ -49,12 +50,21 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
   async asyncData({ $content }) {
     const docs = await $content('/blog').without(['body', 'toc']).fetch()
     return { docs }
+  },
+  data() {
+    return {
+      nightMode: false,
+    }
+  },
+  watch: {
+    nightModel() {
+      this.nightMode = true
+    },
   },
   methods: {
     formatDate(date) {
