@@ -1,10 +1,11 @@
 <template>
-  <div class>
+  <div>
     <div class="columns">
       <div class="hero is-fullheight column column-left is-hidden-touch">
         <div class="container">
+          <ColorMode />
           <LogoBig />
-          <h1>robertoserrano.dev</h1>
+          <h1>robertoserrano.dev {{ colorMode }}</h1>
           <h2><nuxt-link to="/">Home</nuxt-link></h2>
           <h2><nuxt-link to="/blog">Blog</nuxt-link></h2>
           <h2><nuxt-link to="/sobre-mi">Sobre mí</nuxt-link></h2>
@@ -13,7 +14,6 @@
       </div>
       <div class="hero is-fullheight column column-right is-primary">
         <div class="container">
-          <input id="theme-google" type="checkbox" :model="nightMode" />
           <h1
             id="home-title"
             class="title is-1 is-spaced has-text-centered has-text-white"
@@ -41,7 +41,7 @@
             <p>
               Puedes leer más
               <a href="/sobre-mi">sobre mi</a> o consultar algunos de mis
-              <a href="/proyectos">proyectos.</a>
+              <!-- <a href="/proyectos">proyectos.</a> -->
             </p>
           </h2>
           <Social />
@@ -57,14 +57,11 @@ export default {
     return { docs }
   },
   data() {
-    return {
-      nightMode: false,
+    if (process.browser) {
+      return {
+        colorMode: document.documentElement.className,
+      }
     }
-  },
-  watch: {
-    nightModel() {
-      this.nightMode = true
-    },
   },
   methods: {
     formatDate(date) {

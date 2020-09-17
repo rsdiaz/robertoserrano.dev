@@ -28,9 +28,11 @@ body {
   min-height: 100vh;
   overflow: initial;
 }
-
-body {
-  background: $white-ter;
+.light-mode {
+  background-color: $white-ter;
+}
+.dark-mode {
+  background-color: #363636;
 }
 //
 // Navbar
@@ -50,10 +52,6 @@ nav.navbar {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  //background: url(https://res.cloudinary.com/rserrano/image/upload/v1599777224/blog/kyle-sung-oQuP_XBjOMY-unsplash_aqmowb.jpg);
-  //background-size: contain;
-  //background-origin: content-box;
-  background: $white-ter;
   text-align: center;
   font-size: 3rem;
   .container {

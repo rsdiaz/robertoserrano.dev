@@ -5,6 +5,9 @@ export default {
    ** See https://nuxtjs.org/api/configuration-target
    */
   target: 'static',
+  ssr: true,
+  loading: false,
+  loadingIndicator: false,
   /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
@@ -87,6 +90,7 @@ export default {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
+    '@nuxtjs/color-mode',
   ],
   /*
    ** Content module configuration
@@ -99,6 +103,10 @@ export default {
         theme: 'prism-themes/themes/prism-atom-dark.css',
       },
     },
+  },
+  colorMode: {
+    preference: 'system', // default value of $colorMode.preference
+    fallback: 'light', // fallback value if not system preference found
   },
   /*
    ** Build configuration
