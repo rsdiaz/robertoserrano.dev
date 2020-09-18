@@ -91,6 +91,7 @@ export default {
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
     '@nuxtjs/color-mode',
+    '@nuxtjs/svg',
   ],
   /*
    ** Content module configuration
