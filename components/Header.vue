@@ -1,7 +1,7 @@
 <template>
   <nav
     class="navbar"
-    :class="[isHome() ? 'is-light' : 'is-primary is-hidden-desktop']"
+    :class="[isHome() ? 'is-light' : 'is-hidden-desktop']"
     role="navigation"
     aria-label="main navigation"
   >

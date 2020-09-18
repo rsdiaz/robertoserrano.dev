@@ -28,18 +28,25 @@ body {
   min-height: 100vh;
   overflow: initial;
 }
-.light-mode {
-  background-color: $white-ter;
+
+body {
+  background-color: var(--bg);
 }
-.dark-mode {
-  background-color: #363636;
+
+.site-title {
+  color: var(--color);
 }
+
 //
 // Navbar
 //
 nav.navbar {
   max-width: 960px;
   margin: 0 auto;
+  background-color: var(--bg-secondary);
+  .navbar-burger {
+    color: var(--color);
+  }
 }
 
 .navbar-menu.is-active {
@@ -61,10 +68,10 @@ nav.navbar {
     font-weight: 700;
   }
   a {
-    color: $primary;
+    color: var(--color-secondary);
     transition: 0.5s all ease-in-out;
     &:hover {
-      color: #363636;
+      color: var(--color-primary);
     }
   }
   @include tablet {
@@ -72,14 +79,21 @@ nav.navbar {
   }
 }
 
-.hero.column-right {
+.hero.is-fullheight.column.column-right {
   padding: 0.75rem;
+  background-color: var(--bg-secondary);
   p {
     margin-top: 22px;
     margin-left: 12px;
     margin-right: 12px;
   }
-
+  a {
+    color: var(--color-primary);
+    &:hover {
+      background-color: transparent;
+      color: var(--color-secondary);
+    }
+  }
   .subtitle {
     font-size: 1.15rem;
   }

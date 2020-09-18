@@ -5,14 +5,14 @@
         <div class="container">
           <ColorMode />
           <LogoBig />
-          <h1>robertoserrano.dev {{ colorMode }}</h1>
+          <h1 class="site-title" :class="[colorMode]">robertoserrano.dev</h1>
           <h2><nuxt-link to="/">Home</nuxt-link></h2>
           <h2><nuxt-link to="/blog">Blog</nuxt-link></h2>
           <h2><nuxt-link to="/sobre-mi">Sobre mí</nuxt-link></h2>
           <h2><nuxt-link to="/contacto">Contacto</nuxt-link></h2>
         </div>
       </div>
-      <div class="hero is-fullheight column column-right is-primary">
+      <div class="hero is-fullheight column column-right">
         <div class="container">
           <h1
             id="home-title"
@@ -57,10 +57,8 @@ export default {
     return { docs }
   },
   data() {
-    if (process.browser) {
-      return {
-        colorMode: document.documentElement.className,
-      }
+    return {
+      colorMode: '',
     }
   },
   methods: {
