@@ -3,9 +3,8 @@
     <div class="columns">
       <div class="hero is-fullheight column column-left is-hidden-touch">
         <div class="container">
-          <ColorMode />
           <LogoBig />
-          <h1 class="site-title" :class="[colorMode]">robertoserrano.dev</h1>
+          <h1 class="site-title">robertoserrano.dev</h1>
           <h2><nuxt-link to="/">Home</nuxt-link></h2>
           <h2><nuxt-link to="/blog">Blog</nuxt-link></h2>
           <h2><nuxt-link to="/sobre-mi">Sobre mí</nuxt-link></h2>
@@ -13,14 +12,14 @@
         </div>
       </div>
       <div class="hero is-fullheight column column-right">
-        <div class="container">
+        <div class="container hero is-fullheight-with-navbar">
           <h1
             id="home-title"
             class="title is-1 is-spaced has-text-centered has-text-white"
           >
             Hola!
           </h1>
-          <figure class="image my-6">
+          <figure class="image">
             <img
               class="profile-pic is-rounded has-shadow"
               src="https://res.cloudinary.com/rserrano/image/upload/v1598652059/roberto-serrano-desarrolloweb-tarragona.jpg"
@@ -41,10 +40,11 @@
             <p>
               Puedes leer más
               <a href="/sobre-mi">sobre mi</a> o consultar algunos de mis
-              <!-- <a href="/proyectos">proyectos.</a> -->
+              <a href="/sobre-mi">proyectos.</a>
             </p>
           </h2>
           <Social />
+          <ColorMode />
         </div>
       </div>
     </div>
@@ -73,8 +73,3 @@ export default {
   },
 }
 </script>
-<style lang="scss" scoped>
-.hero {
-  justify-content: center;
-}
-</style>

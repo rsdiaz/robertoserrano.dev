@@ -1,6 +1,6 @@
 <template>
-  <section class="section blog-page has-background-white-ter">
-    <h1 class="title is-1 has-text-centered">Blog</h1>
+  <section class="section blog-page">
+    <h1 class="page-title title is-1 has-text-centered">Blog</h1>
     <div class="columns content blog-list-wrapper">
       <div
         v-for="(article, index) in articles"

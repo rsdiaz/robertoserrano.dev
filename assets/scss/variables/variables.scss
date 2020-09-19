@@ -3,21 +3,23 @@ $primary : #02779E;
 $secondary : #FAF0E3;
 
 :root {
-  --color: #243746;
-  --color-primary: #158876;
-  --color-secondary: #0e2233;
   --bg: #f3f5f4;
-  --bg-secondary: #fff;
-  --border-color: #ddd;
+  --color: #4a4a4a;
+  --color-primary: #02779E;
+  --color-secondary: #243746;
+  --bg-secondary: #02779E;
+  --border-color: #eee;
+  --link-color: #fff;
 }
 
 .dark-mode {
-  --color: #ebf4f1;
-  --color-primary: #02779E;
-  --color-secondary: #fdf9f3;
-  --bg: #091a28;
+  --bg: #212727;
+  --color: #FAF0E3;;
+  --color-primary: #fdf9f3;
+  --color-secondary: #02779E;
   --bg-secondary: #071521;
-  --border-color: #0d2538;
+  --border-color: #313131;
+  --link-color: #fff;
 }
 .sepia-mode {
   --color: #433422;

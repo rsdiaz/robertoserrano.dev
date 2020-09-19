@@ -8,18 +8,53 @@
       >
         <component
           :is="`icon-${color}`"
+          :class="getClasses(color)"
           @click="$colorMode.preference = color"
         />
       </li>
     </ul>
-    <ColorScheme placeholder="..." tag="span">
-      Color mode: <b>{{ $colorMode.preference }}</b>
+    <!-- <ColorScheme placeholder="..." tag="span">
+      Color mode:
+      <b>{{ $colorMode.preference }}</b>
       <span v-if="$colorMode.preference === 'system'">
-        (<i>{{ $colorMode.value }}</i> mode detected)
+        (
+        <i>{{ $colorMode.value }}</i> mode detected)
       </span>
-    </ColorScheme>
+    </ColorScheme> -->
   </div>
 </template>
+<style lang="scss" scoped>
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.feather {
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  padding: 2px;
+  background-color: var(--bg-secondary);
+  margin: 0;
+  border-radius: 5px;
+  transition: all 0.1s ease;
+  box-sizing: content-box;
+  color: var(--link-color);
+  &:hover {
+    top: -3px;
+    color: var(--color-secondary);
+  }
+}
+.feather.preferred {
+  color: var(--color-secondary);
+  border-color: var(--color-primary);
+  top: -3px;
+}
+.feather.selected {
+  color: var(--color-secondary);
+}
+</style>
+
 <script>
 import IconSystem from '@/assets/icons/system.svg?inline'
 import IconLight from '@/assets/icons/light.svg?inline'
@@ -35,6 +70,17 @@ export default {
     return {
       colors: ['system', 'light', 'dark'],
     }
+  },
+  methods: {
+    getClasses(color) {
+      if (this.$colorMode.unknown) {
+        return {}
+      }
+      return {
+        preferred: color === this.$colorMode.preference,
+        selected: color === this.$colorMode.value,
+      }
+    },
   },
 }
 </script>

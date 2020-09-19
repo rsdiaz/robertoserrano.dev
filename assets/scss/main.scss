@@ -33,10 +33,6 @@ body {
   background-color: var(--bg);
 }
 
-.site-title {
-  color: var(--color);
-}
-
 //
 // Navbar
 //
@@ -56,6 +52,7 @@ nav.navbar {
 }
 
 .hero.column-left {
+  background-color: var(--bg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,12 +63,13 @@ nav.navbar {
   }
   h1 {
     font-weight: 700;
+    color: var(--color);
   }
   a {
-    color: var(--color-secondary);
+    color: var(--color-primary);
     transition: 0.5s all ease-in-out;
     &:hover {
-      color: var(--color-primary);
+      color: var(--color-secondary);
     }
   }
   @include tablet {
@@ -80,7 +78,6 @@ nav.navbar {
 }
 
 .hero.is-fullheight.column.column-right {
-  padding: 0.75rem;
   background-color: var(--bg-secondary);
   p {
     margin-top: 22px;
@@ -88,7 +85,7 @@ nav.navbar {
     margin-right: 12px;
   }
   a {
-    color: var(--color-primary);
+    color: var(--link-color);
     &:hover {
       background-color: transparent;
       color: var(--color-secondary);
@@ -164,12 +161,17 @@ nav.navbar {
 .card,
 .box,
 .message {
-  border: 1px solid #eee;
+  border: 1px solid var(--border-color);
 }
 
 .card {
   border-radius: 6px;
 }
+
+.page-title {
+  color: var(--color);
+}
+
 //
 // Blog Page
 //
@@ -179,6 +181,7 @@ section.section.blog-page {
 }
 .blog-list {
   margin-bottom: 2rem;
+  background-color: var(--bg);
 }
 .column.blog-list.is-full {
   flex: auto;
