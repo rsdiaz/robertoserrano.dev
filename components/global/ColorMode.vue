@@ -33,25 +33,26 @@ ul {
   position: relative;
   top: 0;
   cursor: pointer;
-  padding: 2px;
+  padding: 6px;
   background-color: var(--bg-secondary);
+  border: 2px solid var(--border-color);
   margin: 0;
   border-radius: 5px;
   transition: all 0.1s ease;
   box-sizing: content-box;
-  color: var(--link-color);
+  color: var(--color);
   &:hover {
     top: -3px;
-    color: var(--color-secondary);
+    color: var(--link-color);
   }
 }
 .feather.preferred {
-  color: var(--color-secondary);
+  color: var(--link-color);
   border-color: var(--color-primary);
   top: -3px;
 }
 .feather.selected {
-  color: var(--color-secondary);
+  color: var(--link-color);
 }
 </style>
 

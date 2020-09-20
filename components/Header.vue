@@ -1,16 +1,14 @@
 <template>
   <nav
     class="navbar"
-    :class="[isHome() ? 'is-light' : 'is-hidden-desktop']"
+    :class="[isHome() ? '' : 'is-hidden-desktop']"
     role="navigation"
     aria-label="main navigation"
   >
     <div class="navbar-brand">
       <nuxt-link to="/" :class="'navbar-item'">
         <Logo />
-        <h3 class="ml-2 has-text-weight-bold is-hidden-mobile">
-          robertoserrano.dev
-        </h3>
+        <h3 class="ml-2 has-text-weight-bold">robertoserrano.dev</h3>
       </nuxt-link>
       <a
         role="button"
@@ -76,7 +74,6 @@ export default {
   },
   methods: {
     isHome() {
-      // eslint-disable-next-line
       return this.$route.name !== 'index'
     },
   },

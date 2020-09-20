@@ -35,3 +35,10 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+a.button {
+  box-sizing: content-box;
+  white-space: normal;
+}
+</style>

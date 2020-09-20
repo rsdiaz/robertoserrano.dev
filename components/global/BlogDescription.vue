@@ -19,6 +19,12 @@ section.description {
   padding-bottom: 0;
   .post-description {
     font-size: 2rem;
+    @include mobile {
+      font-size: 1.5rem;
+    }
+  }
+  @include mobile {
+    padding: 0;
   }
 }
 </style>

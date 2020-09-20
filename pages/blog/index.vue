@@ -22,16 +22,16 @@
         </div>
         <div class="blog-excerpt">
           <h2 class="title is-4 mt-4">
-            <NuxtLink :to="`/blog/${article.slug}`" class="has-text-primary">
+            <NuxtLink :to="`/blog/${article.slug}`">
               {{ article.title }}
             </NuxtLink>
           </h2>
           <p class="date">{{ formatDate(article.createdAt) }}</p>
           <p>{{ article.description }}</p>
           <div class="blog-excerpt-bottom">
-            <NuxtLink :to="`/blog/${article.slug}`" class="has-text-primary">
-              Leer más
-            </NuxtLink>
+            <strong>
+              <NuxtLink :to="`/blog/${article.slug}`"> Leer más</NuxtLink>
+            </strong>
           </div>
         </div>
       </div>
@@ -39,6 +39,7 @@
       <author :author="articles[0].author" />
     </div>
     <Footer />
+    <ColorMode />
   </section>
 </template>
 <script>

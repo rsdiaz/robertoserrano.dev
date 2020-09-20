@@ -3,16 +3,17 @@
     <div class="card section blog-page">
       <article>
         <header>
-          <div class="title-container mb-4">
+          <h1 class="title is-hidden-desktop">{{ article.title }}</h1>
+          <div class="title-container mb-4 is-hidden-mobile">
             <div
               id="blog-post-cover"
               class="background-cover"
               :style="{ backgroundImage: 'url(' + article.picture + ')' }"
             >
               <div class="background-shroud">
-                <p class="title has-text-centered is-2">
+                <h1 class="title has-text-centered is-2">
                   {{ article.title }}
-                </p>
+                </h1>
                 <p class="date has-text-centered has-text-weight-light">
                   Publicado el {{ formatDate(article.updatedAt) }}
                 </p>
@@ -37,6 +38,7 @@
       </article>
     </div>
     <Footer />
+    <ColorMode />
   </div>
 </template>
 
@@ -93,7 +95,9 @@ export default {
   max-width: 960px;
   margin: 0 auto;
   padding: 1.5rem 1.5rem;
-  background: $white;
+}
+h1.title {
+  text-align: center;
 }
 .title-container,
 .background-cover {
@@ -118,7 +122,7 @@ export default {
   height: calc(100vh - 77px);
   position: relative;
   transition: all 0.4s ease-in-out;
-  p.title {
+  h1.title {
     text-align: center;
     color: #fbfbfb;
     font-size: 4vw;
@@ -138,10 +142,6 @@ export default {
     margin-bottom: 58px;
     color: $white-ter;
   }
-}
-
-section.content {
-  padding: 0 1.5rem;
 }
 
 .card.author-card {

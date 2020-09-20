@@ -1,25 +1,30 @@
-$family-sans-serif : 'Montserrat', sans-serif;
-$primary : #02779E;
-$secondary : #FAF0E3;
-
 :root {
   --bg: #f3f5f4;
+  --bg-primary: #fff;
+  --bg-fix: #D2D2D2;
   --color: #4a4a4a;
+  --link-color: #02779E;
+  --link-fix: #fff;
+  
+  /* aa */
   --color-primary: #02779E;
   --color-secondary: #243746;
   --bg-secondary: #02779E;
   --border-color: #eee;
-  --link-color: #fff;
 }
 
 .dark-mode {
-  --bg: #212727;
+  --bg: #2a2a2e;
+  --bg-primary: #38383d;
+  --bg-secondary: #282f2f;
+  --bg-fix: #38383d;
   --color: #FAF0E3;;
+  --link-color: #ff9b51;
+  
+  /* aa */
   --color-primary: #fdf9f3;
   --color-secondary: #02779E;
-  --bg-secondary: #071521;
-  --border-color: #313131;
-  --link-color: #fff;
+  --border-color: #444;
 }
 .sepia-mode {
   --color: #433422;
@@ -28,5 +33,18 @@ $secondary : #FAF0E3;
   --bg-secondary: #eae0c9;
   --border-color: #ded0bf;
 }
+
+$family-sans-serif : 'Montserrat', sans-serif;
+$family-secondary-sans-serif: 'Rubik', sans-serif;
+$secondary : #FAF0E3;
+
+$body-font-size: 1.125rem;
+$title-color: var(--color);
+$subtitle-color: var(--color);
+$strong-color: var(--color);
+$link: var(--link-color);
+$link-hover: var(--color);
+$navbar-item-color: var(--color);
+$navbar-item-hover-background-color: var(--bg);
 
 @import "~bulma/sass/utilities/_all.sass";

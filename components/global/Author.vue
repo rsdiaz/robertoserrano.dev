@@ -11,14 +11,14 @@
           </figure>
         </div>
         <div class="media-content">
-          <p class="title is-5">{{ author.name }}</p>
+          <h3 class="title is-5">{{ author.name }}</h3>
           <p class="subtitle is-6">
             <a href="https://twitter.com/Rovbeat">@Rovbeat</a>
           </p>
         </div>
       </div>
       <div class="content">
-        {{ author.bio }}
+        <p>{{ author.bio }}</p>
       </div>
     </div>
   </div>

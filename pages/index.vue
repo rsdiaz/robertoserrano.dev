@@ -13,10 +13,7 @@
       </div>
       <div class="hero is-fullheight column column-right">
         <div class="container hero is-fullheight-with-navbar">
-          <h1
-            id="home-title"
-            class="title is-1 is-spaced has-text-centered has-text-white"
-          >
+          <h1 id="home-title" class="title is-1 is-spaced has-text-centered">
             Hola!
           </h1>
           <figure class="image">
@@ -26,7 +23,7 @@
               alt="Roberto Serrano desarrollo web Tarragona"
             />
           </figure>
-          <h2 class="subtitle has-text-white">
+          <h2 class="subtitle">
             <p>Mi nombre es Roberto Serrano.</p>
             <p>Soy un desarrollador web viviendo en Tarragona, España.</p>
             <p>
@@ -55,11 +52,6 @@ export default {
   async asyncData({ $content }) {
     const docs = await $content('/blog').without(['body', 'toc']).fetch()
     return { docs }
-  },
-  data() {
-    return {
-      colorMode: '',
-    }
   },
   methods: {
     formatDate(date) {
