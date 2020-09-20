@@ -30,15 +30,9 @@
           <nuxt-link to="/sobre-mi" :class="'navbar-item tg-menu'">
             Sobre mí
           </nuxt-link>
-          <nuxt-link to="/contacto" :class="'navbar-item tg-menu'">
-            Contacto
-          </nuxt-link>
         </div>
-
         <div class="navbar-end">
-          <div class="navbar-item">
-            <Search />
-          </div>
+          <div class="navbar-item"></div>
         </div>
       </div>
     </transition>

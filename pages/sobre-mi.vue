@@ -20,11 +20,26 @@
             estar sin algún proyecto entre manos.
           </p>
           <p>
-            Si quieres contactar conmigo y saber mas, puedes ponerte en contacto
-            rellenando el formulario de contacto aquí.
+            Si quieres contactar conmigo y saber más sobre mí, puedes ponerte en
+            contacto rellenando el formulario de contacto.
           </p>
           <hr />
-          <h2 class="title is-3">Timeline de mi vida</h2>
+          <h2 class="title is-3">Contacto</h2>
+          <p>
+            Puedes ponerte en contacto conmigo rellenando el siguiente
+            formulario. En el campo mensaje te agradecería que pusieras toda la
+            información posible para que mi respuesta sea lo mas acertada
+            posible.
+          </p>
+          <p>O tal vez quieras escribirme a traves de Twitter</p>
+          <p>
+            Escríbeme si estas interesado en mis servicios, si tienes alguna
+            duda o simplemente si quieres saludarme.
+          </p>
+          <p>Una vez reciba tu mensaje, no tardare mucho en responderte. 👍</p>
+          <hr />
+          <h2 class="title is-3">Formulario</h2>
+          <FormContact />
         </div>
       </div>
     </div>

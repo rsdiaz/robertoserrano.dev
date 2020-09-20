@@ -8,7 +8,6 @@
           <h2><nuxt-link to="/">Home</nuxt-link></h2>
           <h2><nuxt-link to="/blog">Blog</nuxt-link></h2>
           <h2><nuxt-link to="/sobre-mi">Sobre mí</nuxt-link></h2>
-          <h2><nuxt-link to="/contacto">Contacto</nuxt-link></h2>
         </div>
       </div>
       <div class="hero is-fullheight column column-right">

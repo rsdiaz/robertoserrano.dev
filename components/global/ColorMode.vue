@@ -48,7 +48,7 @@ ul {
 }
 .feather.preferred {
   color: var(--link-color);
-  border-color: var(--color-primary);
+  border-color: var(--color);
   top: -3px;
 }
 .feather.selected {

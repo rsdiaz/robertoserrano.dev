@@ -15,6 +15,7 @@
 @import "~bulma/sass/layout/hero.sass";
 @import "~bulma/sass/layout/section.sass";
 @import "~bulma/sass/helpers/_all.sass";
+@import "~bulma/sass/form/_all.sass";
 
 /* 
 @import "~bulma/sass/elements/button.sass";
@@ -58,7 +59,7 @@ p {
 nav.navbar {
   max-width: 960px;
   margin: 0 auto;
-  background-color: var(--bg-fix);
+  background-color: var(--bg);
 
   .navbar-burger {
     color: var(--color);
@@ -90,7 +91,7 @@ nav.navbar {
   }
 
   a {
-    color: var(--color-primary);
+    color: var(--color);
     transition: 0.5s all ease-in-out;
 
     &:hover {

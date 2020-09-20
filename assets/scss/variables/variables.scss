@@ -2,14 +2,11 @@
   --bg: #f3f5f4;
   --bg-primary: #fff;
   --bg-fix: #D2D2D2;
+  --bg-secondary: #fff;
   --color: #4a4a4a;
   --link-color: #02779E;
-  --link-fix: #fff;
   
   /* aa */
-  --color-primary: #02779E;
-  --color-secondary: #243746;
-  --bg-secondary: #02779E;
   --border-color: #eee;
 }
 
@@ -22,8 +19,6 @@
   --link-color: #ff9b51;
   
   /* aa */
-  --color-primary: #fdf9f3;
-  --color-secondary: #02779E;
   --border-color: #444;
 }
 .sepia-mode {
@@ -46,5 +41,5 @@ $link: var(--link-color);
 $link-hover: var(--color);
 $navbar-item-color: var(--color);
 $navbar-item-hover-background-color: var(--bg);
-
+$label-color: var(--color);
 @import "~bulma/sass/utilities/_all.sass";
