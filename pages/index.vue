@@ -18,7 +18,7 @@
           <figure class="image">
             <img
               class="profile-pic is-rounded has-shadow"
-              src="https://res.cloudinary.com/rserrano/image/upload/v1598652059/roberto-serrano-desarrolloweb-tarragona.jpg"
+              src="https://res.cloudinary.com/rserrano/image/upload/v1600717003/blog/roberto-serrano_desarrollador_web_tarragona.jpg"
               alt="Roberto Serrano desarrollo web Tarragona"
             />
           </figure>
