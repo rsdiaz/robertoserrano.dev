@@ -35,8 +35,9 @@
             </p>
             <p>
               Puedes leer más
-              <a href="/sobre-mi">sobre mi</a> o consultar algunos de mis
-              <a href="/sobre-mi">proyectos.</a>
+              <nuxt-link to="/sobre-mi">sobre mí</nuxt-link>
+              o consultar algunos de mis
+              <nuxt-link to="/sobre-mi">proyectos.</nuxt-link>
             </p>
           </h2>
           <Social />

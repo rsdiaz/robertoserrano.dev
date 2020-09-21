@@ -31,7 +31,7 @@
             información posible para que mi respuesta sea lo mas acertada
             posible.
           </p>
-          <p>O tal vez quieras escribirme a traves de Twitter</p>
+          <p>O tal vez quieras escribirme a través de Twitter</p>
           <p>
             Escríbeme si estas interesado en mis servicios, si tienes alguna
             duda o simplemente si quieres saludarme.
