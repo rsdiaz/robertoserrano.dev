@@ -1,27 +1,14 @@
 <template>
-  <div>
+  <section class="section blog-page">
+    <h1 class="page-title title is-1 has-text-centered">
+      {{ article.title }}
+    </h1>
+    <p class="date has-text-centered has-text-weight-light">
+      Publicado el {{ formatDate(article.updatedAt) }}
+    </p>
     <div class="card section blog-page">
       <article>
-        <header>
-          <h1 class="title is-hidden-desktop">{{ article.title }}</h1>
-          <div class="title-container mb-4 is-hidden-mobile">
-            <div
-              id="blog-post-cover"
-              class="background-cover"
-              :style="{ backgroundImage: 'url(' + article.picture + ')' }"
-            >
-              <div class="background-shroud">
-                <h1 class="title has-text-centered is-2">
-                  {{ article.title }}
-                </h1>
-                <p class="date has-text-centered has-text-weight-light">
-                  Publicado el {{ formatDate(article.updatedAt) }}
-                </p>
-              </div>
-            </div>
-          </div>
-        </header>
-        <!-- <img class="image" :src="article.picture" :alt="article.alt" /> -->
+        <img class="image" :src="article.picture" :alt="article.alt" />
         <div class="blog-content">
           <BlogDescription :article="article" />
           <section class="section content">
@@ -39,7 +26,7 @@
     </div>
     <Footer />
     <ColorMode />
-  </div>
+  </section>
 </template>
 
 <script>
@@ -98,50 +85,6 @@ export default {
 }
 h1.title {
   text-align: center;
-}
-.title-container,
-.background-cover {
-  height: calc(100vh - 77px);
-}
-.background-cover {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: 0s linear;
-  transition-property: all;
-  transition-property: background-position;
-}
-.background-shroud {
-  background: linear-gradient(
-    to top,
-    rgba(17, 17, 17, 0.8),
-    rgba(17, 17, 17, 0.5),
-    transparent,
-    transparent
-  );
-  height: calc(100vh - 77px);
-  position: relative;
-  transition: all 0.4s ease-in-out;
-  h1.title {
-    text-align: center;
-    color: #fbfbfb;
-    font-size: 4vw;
-    text-shadow: 2px 2px 2px #111;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 15%;
-    max-width: 80%;
-    margin: auto;
-  }
-  p.date {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-bottom: 58px;
-    color: $white-ter;
-  }
 }
 
 .card.author-card {

@@ -10,7 +10,7 @@
       >
         <div class="card-image blog-list-image">
           <figure class="image is-4by3">
-            <clazy-load :src="article.picture">
+            <clazy-load :src="article.picture" margin="40px">
               <transition name="fade">
                 <img :src="article.picture" />
               </transition>
