@@ -47,3 +47,41 @@
     <ColorMode />
   </section>
 </template>
+<script>
+export default {
+  head() {
+    return {
+      title: `Sobre mí | robertoserrano.dev`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Roberto Serrano | Desarrollador Web',
+        },
+        // Open Graph
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'Sobre mí | robertoserrano.dev',
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: 'Roberto Serrano | Desarrollador Web',
+        },
+        // Twitter Card
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: 'Sobre mí | robertoserrano.dev',
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: 'Roberto Serrano | Desarrollador Web',
+        },
+      ],
+    }
+  },
+}
+</script>
