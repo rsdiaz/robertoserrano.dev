@@ -1,6 +1,59 @@
 <template>
   <div>
-    <div class="columns">
+    <div class="container">
+      <div class="logo">
+        <LogoBig />
+        <h1 class="title">Roberto Serrano Diaz-Grande</h1>
+        <h2 class="subtitle is-3">Desarrollador Web | Tarragona</h2>
+        <p>
+          Desde 2012, llevo desarrollando aplicaciones web y he ayudado a muchas
+          personas a lograr cosas innovadoras en la Web. Principalmente trabajo
+          con herramientas y frameworks modernos como Wordpress, VueJs,
+          Angular...
+        </p>
+        <p>
+          Cuando no estoy codificando o presionando píxeles, me encontrarás en
+          el gimnasio, jugando al fútbol o anotando más de par en el campo de
+          golf.
+        </p>
+        <div class="columns is-centered">
+          <div class="column">
+            <a href="/sobre-mi" class="button">Contacto</a>
+          </div>
+          <div class="column">
+            <a href="/sobre-mi" class="button">Sobre mí</a>
+          </div>
+          <div class="column">
+            <a href="/sobre-mi" class="button">Blog</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="columns is-variable is-8">
+        <div class="column">
+          <h2 class="is-size-3 has-text-weight-bold">Trastadas</h2>
+          <ul>
+            <li>
+              <a href="">CSS Grid Template</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2 class="is-size-3 has-text-weight-bold">Proyectos</h2>
+          <ul>
+            <li>
+              <a href="">node-clima</a>
+              <span>Modulo NodeJs escrito en TypeScript</span>
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2 class="is-size-3 has-text-weight-bold">Artículos</h2>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="columns">
       <div class="hero is-fullheight column column-left is-hidden-touch">
         <div class="container">
           <LogoBig />
@@ -44,7 +97,7 @@
           <ColorMode />
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>

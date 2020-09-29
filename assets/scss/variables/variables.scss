@@ -16,7 +16,7 @@
   --bg-secondary: #282f2f;
   --bg-fix: #38383d;
   --color: #FAF0E3;;
-  --link-color: #ff9b51;
+  --link-color: #F94B66;
   
   /* aa */
   --border-color: #444;
@@ -33,8 +33,13 @@ $family-sans-serif : 'Montserrat', sans-serif;
 $family-secondary-sans-serif: 'Rubik', sans-serif;
 $secondary : #FAF0E3;
 
-$body-font-size: 1.125rem;
-$title-color: var(--color);
+// Update Bulma's global variables
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+$title-size: 2.4rem;
+$title-color: var(--link-color);
+
+
 $subtitle-color: var(--color);
 $strong-color: var(--color);
 $link: var(--link-color);

@@ -2,20 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-@import "./variables/variables.scss";
+@import './variables/variables.scss';
 
-@import "~bulma/sass/base/_all.sass";
-@import "~bulma/sass/components/navbar.sass";
-@import "~bulma/sass/components/card.sass";
-@import "~bulma/sass/components/media.sass";
-@import "~bulma/sass/grid/columns.sass";
-@import "~bulma/sass/elements/title.sass";
-@import "~bulma/sass/elements/image.sass";
-@import "~bulma/sass/elements/button.sass";
-@import "~bulma/sass/layout/hero.sass";
-@import "~bulma/sass/layout/section.sass";
-@import "~bulma/sass/helpers/_all.sass";
-@import "~bulma/sass/form/_all.sass";
+@import '~bulma/sass/base/_all.sass';
+@import '~bulma/sass/components/navbar.sass';
+@import '~bulma/sass/components/card.sass';
+@import '~bulma/sass/components/media.sass';
+@import '~bulma/sass/elements/image.sass';
+@import '~bulma/sass/layout/hero.sass';
+
+@import '~bulma/sass/helpers/_all.sass';
+@import '~bulma/sass/elements/title.sass';
+@import '~bulma/sass/layout/section.sass';
+@import '~bulma/sass/elements/container.sass';
+@import '~bulma/sass/grid/columns.sass';
+
+@import '~bulma/sass/form/_all.sass';
 
 html,
 body {
@@ -26,6 +28,40 @@ body {
 body {
   background-color: var(--bg);
   color: var(--color);
+}
+
+.title {
+  letter-spacing: -0.022rem;
+}
+.subtitle {
+  font-weight: 600;
+  letter-spacing: -0.022rem;
+}
+
+.button {
+  box-sizing: border-box !important;
+  background-color: initial !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: inset 0 0 0 1px #fff !important;
+  color: #fff !important;
+  cursor: pointer !important;
+  display: inline-block !important;
+  font-size: 0.8em !important;
+  font-weight: 600 !important;
+  height: 3.5em !important;
+  letter-spacing: 0.25em !important;
+  line-height: 3.5em !important;
+  padding: 0 1.75em !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
+  margin-bottom: 2rem !important;
+}
+
+.column {
+  padding: 0;
 }
 
 input[type='search'] {
@@ -42,7 +78,6 @@ hr {
 
 p {
   margin-bottom: 16px;
-  font-family: $family-secondary-sans-serif;
 }
 
 //
@@ -242,9 +277,7 @@ section.section.blog-page {
   margin-top: 16px;
 }
 
-
 @include mobile {
-
   .card.column.blog-list.is-full,
   .card.column.blog-list.is-half {
     width: 100%;
