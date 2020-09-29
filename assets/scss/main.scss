@@ -5,11 +5,12 @@
 @import './variables/variables.scss';
 
 @import '~bulma/sass/base/_all.sass';
-@import '~bulma/sass/components/navbar.sass';
+
+/* @import '~bulma/sass/components/navbar.sass';
 @import '~bulma/sass/components/card.sass';
 @import '~bulma/sass/components/media.sass';
 @import '~bulma/sass/elements/image.sass';
-@import '~bulma/sass/layout/hero.sass';
+@import '~bulma/sass/layout/hero.sass'; */
 
 @import '~bulma/sass/helpers/_all.sass';
 @import '~bulma/sass/elements/title.sass';
@@ -58,10 +59,28 @@ body {
   text-transform: uppercase !important;
   white-space: nowrap !important;
   margin-bottom: 2rem !important;
+
+  @include mobile {
+    width: 50%;
+  }
 }
 
 .column {
   padding: 0;
+}
+
+.container {
+  @include mobile {
+    padding: 18px;
+  }
+}
+
+.frontend,
+.backend {
+  span {
+    display: block;
+    font-size: 0.8rem;
+  }
 }
 
 input[type='search'] {
@@ -77,7 +96,7 @@ hr {
 }
 
 p {
-  margin-bottom: 16px;
+  margin-bottom: 1.5rem;
 }
 
 //
