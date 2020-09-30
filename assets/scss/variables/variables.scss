@@ -38,12 +38,12 @@ $widescreen-enabled: false;
 $fullhd-enabled: false;
 $title-size: 2.4rem;
 $title-color: var(--link-color);
+$link: var(--color);
+$link-hover: var(--link-color);
 
 
 $subtitle-color: var(--color);
 $strong-color: var(--color);
-$link: var(--link-color);
-$link-hover: var(--color);
 $navbar-item-color: var(--color);
 $navbar-item-hover-background-color: var(--bg);
 $label-color: var(--color);

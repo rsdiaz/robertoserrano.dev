@@ -5,13 +5,6 @@
 @import './variables/variables.scss';
 
 @import '~bulma/sass/base/_all.sass';
-
-/* @import '~bulma/sass/components/navbar.sass';
-@import '~bulma/sass/components/card.sass';
-@import '~bulma/sass/components/media.sass';
-@import '~bulma/sass/elements/image.sass';
-@import '~bulma/sass/layout/hero.sass'; */
-
 @import '~bulma/sass/helpers/_all.sass';
 @import '~bulma/sass/elements/title.sass';
 @import '~bulma/sass/layout/section.sass';
@@ -31,6 +24,15 @@ body {
   color: var(--color);
 }
 
+a {
+  transition: 0.5s;
+  font-weight: bold;
+}
+
+header {
+  padding-top: 50px;
+}
+
 .title {
   letter-spacing: -0.022rem;
 }
@@ -40,6 +42,7 @@ body {
 }
 
 .button {
+  width: 100%;
   box-sizing: border-box !important;
   background-color: initial !important;
   border: 0 !important;
@@ -59,10 +62,11 @@ body {
   text-transform: uppercase !important;
   white-space: nowrap !important;
   margin-bottom: 2rem !important;
+}
 
-  @include mobile {
-    width: 50%;
-  }
+.button:hover {
+  box-shadow: inset 0 0 0 1px var(--link-color) !important;
+  color: var(--link-color) !important;
 }
 
 .column {
@@ -76,10 +80,23 @@ body {
 }
 
 .frontend,
-.backend {
+.backend,
+.article {
+  padding-top: 18px;
+  a {
+    font-weight: normal;
+  }
   span {
     display: block;
     font-size: 0.8rem;
+    margin-bottom: 10px;
+    &.tag {
+      display: inline-block;
+      background: var(--link-color);
+      color: #fff;
+      padding: 2px;
+      font-weight: bold;
+    }
   }
 }
 

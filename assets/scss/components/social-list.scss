@@ -1,0 +1,14 @@
+ul.social-list {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-align: center;
+  a {
+    font-weight: normal;
+    position: relative;
+    top: 0;
+    padding: 5px;
+    &:hover {
+      top: -3px;
+    }
+  }
+}

@@ -1,18 +1,15 @@
 <template>
-  <footer class="footer">
+  <footer>
     <div class="content has-text-centered">
       <p>
         <strong>robertoserrano.dev</strong> by
-        <a href="https://jgthms.com">Roberto Serrano</a>
+        <a href="https://twitter.com/Rovbeat">Roberto Serrano</a>
         con 💖 para el 🌍 © 2020
       </p>
-      <Social />
+      <span>Construido usando 💚 Nuxt, Particles.js & Bulma</span>
     </div>
   </footer>
 </template>
-<style lang="scss" scoped>
-.footer {
-  background: transparent;
-  padding: 3rem 1.5rem 1rem;
-}
+<style lang="scss">
+@import '~/assets/scss/components/footer.scss';
 </style>
