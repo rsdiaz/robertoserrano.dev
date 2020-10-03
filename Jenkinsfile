@@ -12,8 +12,8 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm install'
-                sh 'nuxt build'
-                sh 'nuxt start'
+                sh 'npm run build'
+                sh 'npm run start'
             }
         }
         stage('Test') {
