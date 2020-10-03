@@ -13,6 +13,10 @@
 
 @import '~bulma/sass/form/_all.sass';
 
+html {
+  background: transparent;
+}
+
 html,
 body {
   min-height: 100vh;
@@ -31,6 +35,19 @@ a {
 
 header {
   padding-top: 50px;
+}
+canvas {
+  height: 100vh;
+  z-index: -10;
+  position: fixed;
+  top: 0;
+}
+#top-angle {
+  position: relative;
+  z-index: 9;
+  height: 43px;
+  background: #f94b66;
+  transform: skewY(1deg) translateY(-19px);
 }
 
 .title {
