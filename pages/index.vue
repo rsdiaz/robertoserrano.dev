@@ -1,6 +1,7 @@
 <template>
-  <div id="particles-js">
-    <div id="top-angle"></div>
+  <div>
+    <Animation />
+    <TopAngle />
     <header>
       <div class="container">
         <div>
@@ -38,7 +39,7 @@
     </header>
     <section>
       <div class="container">
-        <div class="columns is-variable is-8">
+        <div class="columns is-8">
           <div class="column frontend">
             <h2 class="is-size-3 has-text-weight-bold mb-3">Frontend</h2>
             <ul>
@@ -80,8 +81,9 @@
               v-for="(article, index) in articles"
               :key="index"
               :href="`/blog/${article.slug}`"
+              :style="[!index ? { display: 'flex' } : {}]"
             >
-              <span :style="[!index ? { display: 'inline-block' } : {}]">
+              <span>
                 {{ article.title }}
               </span>
               <span v-if="!index" class="tag">NUEVO</span>
@@ -98,130 +100,14 @@
 <script>
 export default {
   async asyncData({ $content }) {
-    const articles = await $content('/blog').without(['body', 'toc']).fetch()
+    const articles = await $content('/blog')
+      .without(['body', 'toc'])
+      .sortBy('createdAt', 'desc')
+      .fetch()
     return { articles }
-  },
-  mounted() {
-    // eslint-disable-next-line no-undef
-    particlesJS('particles-js', {
-      particles: {
-        number: {
-          value: 33,
-          density: {
-            enable: true,
-            value_area: 1420.4657549380909,
-          },
-        },
-        color: {
-          value: '#ffffff',
-        },
-        shape: {
-          type: 'star',
-          stroke: {
-            width: 0,
-            color: '#000000',
-          },
-          polygon: {
-            nb_sides: 5,
-          },
-          image: {
-            src: 'img/github.svg',
-            width: 100,
-            height: 100,
-          },
-        },
-        opacity: {
-          value: 0.06313181133058181,
-          random: false,
-          anim: {
-            enable: false,
-            speed: 1,
-            opacity_min: 0.1,
-            sync: false,
-          },
-        },
-        size: {
-          value: 5,
-          random: true,
-          anim: {
-            enable: false,
-            speed: 40,
-            size_min: 0.1,
-            sync: false,
-          },
-        },
-        line_linked: {
-          enable: true,
-          distance: 150,
-          color: '#ffffff',
-          opacity: 0.4,
-          width: 1,
-        },
-        move: {
-          enable: true,
-          speed: 6,
-          direction: 'none',
-          random: false,
-          straight: false,
-          out_mode: 'out',
-          bounce: false,
-          attract: {
-            enable: false,
-            rotateX: 600,
-            rotateY: 1200,
-          },
-        },
-      },
-      interactivity: {
-        detect_on: 'canvas',
-        events: {
-          onhover: {
-            enable: false,
-            mode: 'repulse',
-          },
-          onclick: {
-            enable: false,
-            mode: 'push',
-          },
-          resize: true,
-        },
-        modes: {
-          grab: {
-            distance: 400,
-            line_linked: {
-              opacity: 1,
-            },
-          },
-          bubble: {
-            distance: 400,
-            size: 40,
-            duration: 2,
-            opacity: 8,
-            speed: 3,
-          },
-          repulse: {
-            distance: 200,
-            duration: 0.4,
-          },
-          push: {
-            particles_nb: 4,
-          },
-          remove: {
-            particles_nb: 2,
-          },
-        },
-      },
-      retina_detect: true,
-    })
   },
   head() {
     return {
-      script: [
-        {
-          src:
-            'https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js',
-        },
-      ],
       title:
         '🙋‍♂️ Roberto Serrano | 💻 Desarrollador Web en Tarragona | 🌍 robertoserrano.dev',
     }

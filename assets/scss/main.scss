@@ -46,7 +46,7 @@ canvas {
   position: relative;
   z-index: 9;
   height: 43px;
-  background: #f94b66;
+  background: var(--link-color);
   transform: skewY(1deg) translateY(-19px);
 }
 
@@ -64,8 +64,8 @@ canvas {
   background-color: initial !important;
   border: 0 !important;
   border-radius: 0 !important;
-  box-shadow: inset 0 0 0 1px #fff !important;
-  color: #fff !important;
+  box-shadow: inset 0 0 0 1px var(--color) !important;
+  color: var(--color);
   cursor: pointer !important;
   display: inline-block !important;
   font-size: 0.8em !important;
@@ -108,14 +108,19 @@ canvas {
     font-size: 0.8rem;
     margin-bottom: 10px;
     &.tag {
-      display: inline-block;
+      height: 24px;
+      padding: 2px;
+      margin-left: 5px;
       background: var(--link-color);
       color: #fff;
-      padding: 2px;
       font-weight: bold;
     }
   }
 }
+
+
+
+
 
 input[type='search'] {
   padding: 6px;

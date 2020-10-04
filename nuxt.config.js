@@ -67,7 +67,11 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['~plugins/vue-clazy-load', '~/plugins/disqus'],
+  plugins: [
+    '~plugins/vue-clazy-load',
+    '~/plugins/disqus',
+    '~/plugins/particles',
+  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components

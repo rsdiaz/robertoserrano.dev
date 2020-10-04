@@ -26,11 +26,11 @@
     "@nuxtjs/pwa": "^3.0.2",
     "node-sass": "^4.14.1",
     "nuxt": "^2.14.5",
+    "particles.vue": "^2.0.12",
     "prism-themes": "^1.4.0",
     "sass-loader": "^9.0.3",
     "vue-clazy-load": "^0.4.2",
-    "vue-disqus": "^4.0.1",
-    "vue-particles": "^1.0.9"
+    "vue-disqus": "^4.0.1"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^1.1.1",
