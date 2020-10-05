@@ -25,13 +25,13 @@
           </p>
           <div class="columns is-variable pb-3 pt-5">
             <div class="column is-2">
-              <nuxt-link to="/contacto" class="button">Contacto</nuxt-link>
+              <nuxt-link to="/blog" class="button">Blog</nuxt-link>
             </div>
             <div class="column is-2">
               <nuxt-link to="/sobre-mi" class="button">Sobre mí</nuxt-link>
             </div>
             <div class="column is-2">
-              <nuxt-link to="/blog" class="button">Blog</nuxt-link>
+              <nuxt-link to="/contacto" class="button">Contacto</nuxt-link>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@
     </header>
     <section>
       <div class="container">
-        <div class="columns is-8">
+        <div class="columns is-variable is-2-mobile is-0-tablet is-3-desktop">
           <div class="column frontend">
             <h2 class="is-size-3 has-text-weight-bold mb-3">Frontend</h2>
             <ul>

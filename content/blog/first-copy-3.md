@@ -4,7 +4,7 @@ description: 'Este es mi primer artículo del blog con Nuxt y nuxt-content escri
 con Markdown'
 picture: https://images.unsplash.com/photo-1593642532454-e138e28a63f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
 alt: mi primer post con nuxt
-category: JavaScript
+category: JavaScript, HTML/CSS
 createdAt: 10-04-2020
 updatedAt:  10-04-2020
 author:

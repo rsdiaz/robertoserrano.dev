@@ -11,8 +11,6 @@
 @import '~bulma/sass/elements/container.sass';
 @import '~bulma/sass/grid/columns.sass';
 
-@import '~bulma/sass/form/_all.sass';
-
 html {
   background: transparent;
 }
@@ -118,9 +116,18 @@ canvas {
   }
 }
 
+.date {
+  margin: 0;
+  font-weight: bold;
+  color: $grey-light;
+}
 
 
-
+article.post-list {
+  margin-bottom: 58px;
+  border-left: 8px solid var(--link-color);
+  padding-left: 12px;
+}
 
 input[type='search'] {
   padding: 6px;
@@ -253,10 +260,6 @@ nav.navbar {
 .hero.is-primary a.navbar-item:hover {
   background-color: #02779e;
   color: #f9f9f9e5;
-}
-
-.date {
-  color: $grey-light;
 }
 
 .footer {
