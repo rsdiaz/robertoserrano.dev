@@ -15,20 +15,22 @@
       </div>
       <div class="columns">
         <section class="column">
-          <h1 class="title">Blog</h1>
-          <h2 class="subtitle is-3">
-            Aquí encontrarás mis artículos publicados
-          </h2>
-          <p>
-            En mi blog escribo artículos sobre desarrollo web y mi día a día
-            tecnológico. Puedes encontrar artículos sobre tecnologías web como
-            HTML, CSS, JavaScript, Node.js, herramientas de desarrollo, etc.
-          </p>
-          <p>
-            Pero también escribo sobre otros temas como servidores NAS, Docker,
-            GNU/Linux o simplemente artículos que quiero guardar para una futura
-            referencia.
-          </p>
+          <header class="page-header">
+            <h1 class="title">Blog</h1>
+            <h2 class="subtitle is-3">
+              Aquí encontrarás mis artículos publicados
+            </h2>
+            <p>
+              En mi blog escribo artículos sobre desarrollo web y mi día a día
+              tecnológico. Puedes encontrar artículos sobre tecnologías web como
+              HTML, CSS, JavaScript, Node.js, herramientas de desarrollo, etc.
+            </p>
+            <p>
+              Pero también escribo sobre otros temas como servidores NAS,
+              Docker, GNU/Linux o simplemente artículos que quiero guardar para
+              una futura referencia.
+            </p>
+          </header>
           <article
             v-for="(article, index) in articles"
             :key="index"
@@ -49,13 +51,6 @@
         <aside class="column is-3">
           <h3 class="title is-4">Buscar artículos</h3>
           <Search />
-          <h3 class="title is-4">Categorias</h3>
-          <p># HTML/CSS</p>
-          <p># JavaScript</p>
-          <p># NodeJs</p>
-          <p># Vue</p>
-          <p># Servidores NAS</p>
-          <p># Docker</p>
         </aside>
       </div>
       <SocialList />
@@ -63,55 +58,12 @@
       <Footer />
     </div>
   </div>
-  <!-- <section class="section blog-page">
-    <h1 class="page-title title is-1 has-text-centered">Blog</h1>
-    <div class="columns content blog-list-wrapper">
-      <div
-        v-for="(article, index) in articles"
-        :key="index"
-        class="card column blog-list"
-        :class="[isArticleFull(index) ? 'is-full' : 'is-half']"
-      >
-        <div class="card-image blog-list-image">
-          <figure class="image is-4by3">
-            <clazy-load :src="article.picture" margin="40px">
-              <transition name="fade">
-                <img :src="article.picture" />
-              </transition>
-              <transition slot="placeholder" name="fade">
-                <div slot="placeholder">Loading....</div>
-              </transition>
-            </clazy-load>
-          </figure>
-        </div>
-        <div class="blog-excerpt">
-          <h2 class="title is-4 mt-4">
-            <NuxtLink :to="`/blog/${article.slug}`">
-              {{ article.title }}
-            </NuxtLink>
-          </h2>
-          <p class="date">{{ formatDate(article.createdAt) }}</p>
-          <p>{{ article.description }}</p>
-          <div class="blog-excerpt-bottom">
-            <strong>
-              <NuxtLink :to="`/blog/${article.slug}`"> Leer más</NuxtLink>
-            </strong>
-          </div>
-        </div>
-      </div>
-      <author :author="articles[0].author" />
-    </div>
-    <Footer />
-    <ColorMode />
-  </section> -->
 </template>
 <script>
 export default {
   async asyncData({ $content }) {
     const articles = await $content('/blog').sortBy('createdAt', 'desc').fetch()
-    const categories = await $content('/blog').only(['category']).fetch()
-    console.log(categories)
-    return { articles, categories }
+    return { articles }
   },
   methods: {
     goToArticle(slug) {

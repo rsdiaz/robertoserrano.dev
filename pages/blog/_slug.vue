@@ -1,7 +1,39 @@
 <template>
-  <section class="section blog-page">
+  <div>
+    <TopAngle />
+    <div class="container">
+      <div class="columns is-variable pb-3 pt-5">
+        <div class="column is-2">
+          <nuxt-link to="/" class="button">Home</nuxt-link>
+        </div>
+        <div class="column is-2">
+          <nuxt-link to="/sobre-mi" class="button">Sobre mí</nuxt-link>
+        </div>
+        <div class="column is-2">
+          <nuxt-link to="/contacto" class="button">Contacto</nuxt-link>
+        </div>
+      </div>
+      <div class="columns">
+        <article class="column">
+          <header class="page-header">
+            <p class="date is-size-7">{{ formatDate(article.createdAt) }}</p>
+            <h1 class="title">
+              {{ article.title }}
+            </h1>
+            <cite>{{ article.description }}</cite>
+          </header>
+          <nuxt-content :document="article" />
+          <TwitterShare :article="article" />
+          <Comments />
+          <SocialList />
+          <ColorMode />
+          <Footer />
+        </article>
+      </div>
+    </div>
+  </div>
+  <!-- <section class="section blog-page">
     <h1 class="page-title title is-1 has-text-centered">
-      {{ article.title }}
     </h1>
     <p class="date has-text-centered has-text-weight-light">
       Publicado el {{ formatDate(article.updatedAt) }}
@@ -13,12 +45,10 @@
           <BlogDescription :article="article" />
           <section class="section content">
             <hr />
-            <!-- markdown content -->
             <nuxt-content :document="article" />
             <hr />
             <TwitterShare :article="article" />
             <Comments />
-            <!-- content author component -->
             <Author :author="article.author" />
           </section>
         </div>
@@ -26,7 +56,7 @@
     </div>
     <Footer />
     <ColorMode />
-  </section>
+  </section> -->
 </template>
 
 <script>
@@ -82,9 +112,6 @@ export default {
   max-width: 960px;
   margin: 0 auto;
   padding: 1.5rem 1.5rem;
-}
-h1.title {
-  text-align: center;
 }
 
 .card.author-card {

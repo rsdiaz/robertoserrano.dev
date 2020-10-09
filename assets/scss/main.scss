@@ -34,12 +34,14 @@ a {
 header {
   padding-top: 50px;
 }
+
 canvas {
   height: 100vh;
   z-index: -10;
   position: fixed;
   top: 0;
 }
+
 #top-angle {
   position: relative;
   z-index: 9;
@@ -122,12 +124,24 @@ canvas {
   color: $grey-light;
 }
 
+header.page-header {
+  padding-top: 0;
+  margin-bottom: 5rem;
+}
 
 article.post-list {
   margin-bottom: 58px;
   border-left: 8px solid var(--link-color);
   padding-left: 12px;
+  h2.title {
+    margin-bottom: 0.5rem;
+  }
 }
+
+
+
+
+
 
 input[type='search'] {
   padding: 6px;
