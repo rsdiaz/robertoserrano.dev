@@ -13,17 +13,14 @@ author:
 ---
 
 Para quien no sepa que es Portainer, Portainer es una aplicación web desarrollada con Angular que sirve para gestionar contenedores Docker de manera visual.
-
-Yo la conocí a través del curso en [YouTube sobre Docker en Qnap](https://www.youtube.com/watch?v=BuG_ghLhFV0&t=1s) de [@jmramirez](https://twitter.com/jmramirez) el cual recomiendo si quieres saber más sobre Docker.
+Yo lo conocí a través del curso en [YouTube sobre Docker en Qnap](https://www.youtube.com/watch?v=BuG_ghLhFV0&t=1s) de [@jmramirez](https://twitter.com/jmramirez) el cual recomiendo si quieres saber más sobre Docker.
 
 Portainer permite desde su interfaz actualizar contenedores Docker, esto suele funcionar en todos los contenedores, a excepción del propio Portainer. Es por eso que hay que realizar una actualización manual.
-
 Hace seis días se lanzo una nueva release de Portainer, la CE 2.0.0 la cual introduce 101 cambios a Portainer, uno de los mayores cambios es el soporte con Kubernetes. Tenéis todos los cambios [aquí.](https://github.com/portainer/portainer/releases)
 
 En mi caso utilizo Portainer en un NAS Synology donde tengo instalado Docker, pero la verdad que Portainer es mucho mas completo que la aplicación nativa de Synology Docker.
-
 Los siguientes pasos para actualizar Portainer son válidos en cualquier plataforma que ejecute Docker.
-
+## Actualizando Portainer
 Los pasos a seguir para actualizar Portainer son bastante sencillos:
 
 - Parar el contenedor de Portainer
