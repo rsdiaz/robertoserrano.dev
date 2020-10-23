@@ -4,6 +4,7 @@
     <TopAngle />
     <header>
       <div class="container">
+        <Nav />
         <div>
           <h1 class="title">Roberto Serrano Diaz-Grande</h1>
           <h2 class="subtitle is-3">Desarrollador Web | Tarragona</h2>
@@ -23,17 +24,6 @@
             el gimnasio, jugando al fútbol o anotando más de par en el campo de
             golf.
           </p>
-          <div class="columns is-variable pb-3 pt-5">
-            <div class="column is-2">
-              <nuxt-link to="/blog" class="button">Blog</nuxt-link>
-            </div>
-            <div class="column is-2">
-              <nuxt-link to="/sobre-mi" class="button">Sobre mí</nuxt-link>
-            </div>
-            <div class="column is-2">
-              <nuxt-link to="/contacto" class="button">Contacto</nuxt-link>
-            </div>
-          </div>
         </div>
       </div>
     </header>
