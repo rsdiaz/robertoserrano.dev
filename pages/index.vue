@@ -8,6 +8,7 @@
         <div>
           <h1 class="title">Roberto Serrano Diaz-Grande</h1>
           <h2 class="subtitle is-3">Desarrollador Web | Tarragona</h2>
+          <div class="border-bottom"></div>
           <p>
             Desde 2012, llevo desarrollando aplicaciones web y he ayudado a
             muchas personas a lograr cosas innovadoras en la Web. Principalmente

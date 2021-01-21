@@ -33,6 +33,9 @@ a {
 
 header {
   padding-top: 50px;
+  h2.subtitle:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 canvas {
@@ -73,7 +76,8 @@ canvas {
   height: 3.5em !important;
   letter-spacing: 0.25em !important;
   line-height: 3.5em !important;
-  padding: 0 1.75em !important;
+
+  /* padding: 0 1.75em !important; */
   text-align: center !important;
   text-decoration: none !important;
   text-transform: uppercase !important;
@@ -150,6 +154,14 @@ article.post-list {
     margin-top: 1.5rem;
   }
 }
+
+.border-bottom {
+  width: 10.5rem;
+  height: 5px;
+  margin-bottom: 2.5rem;
+  background: var(--link-color);
+}
+
 
 
 
