@@ -156,15 +156,11 @@ article.post-list {
 }
 
 .border-bottom {
-  width: 10.5rem;
+  width: 25%;
   height: 5px;
   margin-bottom: 2.5rem;
   background: var(--link-color);
 }
-
-
-
-
 
 input[type='search'] {
   padding: 6px;
@@ -391,5 +387,44 @@ section.section.blog-page {
 section.section.content {
   @include mobile {
     padding: 0;
+  }
+}
+
+//
+// About me Page
+//
+div.about-intro {
+  div.is-4 {
+    background: url('https://res.cloudinary.com/rserrano/image/upload/v1611353909/blog/Sin_nombre_brvzig.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+.skill {
+  background: rgb(249, 75, 102);
+  background: linear-gradient(
+    180deg,
+    rgba(249, 75, 102, 0.5) 0%,
+    rgba(42, 42, 46, 1) 100%
+  );
+  padding: 2.8rem;
+  margin-bottom: 2.8rem;
+
+  ul {
+    margin-top: 1.5rem;
+  }
+
+  svg {
+    display: block;
+    margin: 0 auto;
+    width: 58px;
+    stroke: bisque;
+    fill: white;
   }
 }

@@ -14,6 +14,7 @@
             <h2 class="subtitle is-3">
               Aquí encontrarás mis artículos publicados
             </h2>
+            <div class="border-bottom"></div>
             <p>
               En mi blog escribo artículos sobre desarrollo web y mi día a día
               tecnológico. Puedes encontrar artículos sobre tecnologías web como

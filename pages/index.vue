@@ -21,9 +21,8 @@
             sobre desarrollo web y mi día a día tecnológico.
           </p>
           <p>
-            Cuando no estoy codificando o presionando píxeles, me encontrarás en
-            el gimnasio, jugando al fútbol o anotando más de par en el campo de
-            golf.
+            Cuando no estoy codificando o presionando botones, me encontrarás
+            pescando, destripando dispositivos o disfrutando de la naturaleza.
           </p>
         </div>
       </div>
@@ -33,6 +32,7 @@
         <div class="columns is-variable is-2-mobile is-0-tablet is-3-desktop">
           <div class="column frontend">
             <h2 class="is-size-3 has-text-weight-bold mb-3">Frontend</h2>
+            <div class="border-bottom"></div>
             <ul>
               <li>
                 <a href="">
@@ -50,6 +50,7 @@
           </div>
           <div class="column backend">
             <h2 class="is-size-3 has-text-weight-bold mb-3">Backend</h2>
+            <div class="border-bottom"></div>
             <ul>
               <li>
                 <a href="">
@@ -68,6 +69,7 @@
           </div>
           <div class="column article">
             <h2 class="is-size-3 has-text-weight-bold mb-3">Artículos</h2>
+            <div class="border-bottom"></div>
             <a
               v-for="(article, index) in articles"
               :key="index"
