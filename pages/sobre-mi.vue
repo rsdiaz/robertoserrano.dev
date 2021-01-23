@@ -3,7 +3,7 @@
     <Animation />
     <TopAngle />
     <Header :title="title" :subtitle="subtitle" />
-    <header>
+    <!-- <header>
       <div class="container">
         <Nav />
         <div>
@@ -32,7 +32,29 @@
           </div>
         </div>
       </div>
-    </header>
+    </header> -->
+    <section class="container pb-6">
+      <div class="about-intro columns">
+        <div class="column is-8">
+          <p>
+            <b>Hola!</b>, soy Roberto Serrano Diaz-Grande, técnico informático y
+            desarrollador web. Me apasiona la tecnología en especial la web, la
+            programación, los sistemas operativos, los servidores NAS, los
+            videojuegos...
+          </p>
+          <p>
+            Navegando en Internet desde los 90, metódico, resolutivo y en
+            continua formación, vamos un regalo sin envoltorio xD. No puedo
+            estar sin algún proyecto entre manos.
+          </p>
+          <p>
+            Si quieres contactar conmigo y saber más sobre mí, puedes ponerte en
+            contacto rellenando el formulario de contacto.
+          </p>
+        </div>
+        <div class="column is-4"></div>
+      </div>
+    </section>
     <section class="container pt-6">
       <h1 class="subtitle is-3 has-text-centered">Skills</h1>
       <div class="columns">
@@ -64,14 +86,14 @@
         </div>
         <div class="column is-4">
           <div class="skill">
-            <h2 class="subtitle is-4 has-text-centered">CMS</h2>
+            <h2 class="subtitle is-4 has-text-centered">Tools</h2>
             <IconCms />
             <ul class="has-text-centered">
               <li>WordPress</li>
               <li>Prestashop</li>
               <li>WooCommerce</li>
               <li>Ghost</li>
-              <li>Magento</li>
+              <li>Git</li>
             </ul>
           </div>
         </div>

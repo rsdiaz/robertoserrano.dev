@@ -394,7 +394,12 @@ section.section.content {
 // About me Page
 //
 div.about-intro {
+  div.is-8 {
+    margin-bottom: 3.8rem;
+  }
   div.is-4 {
+    min-width: 300px;
+    min-height: 300px;
     background: url('https://res.cloudinary.com/rserrano/image/upload/v1611353909/blog/Sin_nombre_brvzig.jpg');
     background-position: center;
     background-size: contain;
@@ -407,17 +412,13 @@ div.about-intro {
 }
 
 .skill {
-  background: rgb(249, 75, 102);
-  background: linear-gradient(
-    180deg,
-    rgba(249, 75, 102, 0.5) 0%,
-    rgba(42, 42, 46, 1) 100%
-  );
   padding: 2.8rem;
-  margin-bottom: 2.8rem;
-
   ul {
     margin-top: 1.5rem;
+  }
+
+  h2 {
+    color: var(--link-color);
   }
 
   svg {
