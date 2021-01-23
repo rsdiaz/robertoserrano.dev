@@ -3,36 +3,6 @@
     <Animation />
     <TopAngle />
     <Header :title="title" :subtitle="subtitle" />
-    <!-- <header>
-      <div class="container">
-        <Nav />
-        <div>
-          <h1 class="title">Sobre mí</h1>
-          <h2 class="subtitle is-3">Roberto Serrano Diaz-Grande</h2>
-          <div class="border-bottom"></div>
-          <div class="about-intro columns">
-            <div class="column is-8">
-              <p>
-                <b>Hola!</b>, soy Roberto Serrano Diaz-Grande, técnico
-                informático y desarrollador web. Me apasiona la tecnología en
-                especial la web, la programación, los sistemas operativos, los
-                servidores NAS, los videojuegos...
-              </p>
-              <p>
-                Navegando en Internet desde los 90, metódico, resolutivo y en
-                continua formación, vamos un regalo sin envoltorio xD. No puedo
-                estar sin algún proyecto entre manos.
-              </p>
-              <p>
-                Si quieres contactar conmigo y saber más sobre mí, puedes
-                ponerte en contacto rellenando el formulario de contacto.
-              </p>
-            </div>
-            <div class="column is-4"></div>
-          </div>
-        </div>
-      </div>
-    </header> -->
     <section class="container pb-6">
       <div class="about-intro columns">
         <div class="column is-8">
@@ -49,7 +19,7 @@
           </p>
           <p>
             Si quieres contactar conmigo y saber más sobre mí, puedes ponerte en
-            contacto rellenando el formulario de contacto.
+            contacto rellenando el formulario de <a href="#">contacto</a>.
           </p>
         </div>
         <div class="column is-4"></div>

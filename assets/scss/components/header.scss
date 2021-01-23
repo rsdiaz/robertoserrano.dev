@@ -1,0 +1,9 @@
+header {
+  padding-top: 50px;
+  h2.subtitle:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  div.container {
+    padding-bottom: 0;
+  }
+}

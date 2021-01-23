@@ -31,13 +31,6 @@ a {
   font-weight: bold;
 }
 
-header {
-  padding-top: 50px;
-  h2.subtitle:not(:last-child) {
-    margin-bottom: 10px;
-  }
-}
-
 canvas {
   height: 100vh;
   z-index: -10;
