@@ -125,26 +125,12 @@ canvas {
   color: $grey-light;
 }
 
-header.page-header {
-  padding-top: 0;
-  margin-bottom: 5rem;
-}
-
 article.post-list {
   margin-bottom: 58px;
   border-left: 8px solid var(--link-color);
   padding-left: 12px;
   h2.title {
     margin-bottom: 0.5rem;
-  }
-}
-
-.blog-post {
-  header.page-header {
-    margin-bottom: 1.5rem;
-  }
-  img {
-    margin-top: 1.5rem;
   }
 }
 

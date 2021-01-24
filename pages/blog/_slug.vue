@@ -1,63 +1,29 @@
 <template>
   <div>
+    <Animation />
     <TopAngle />
-    <div class="container">
-      <div class="columns is-variable pb-3 pt-5">
-        <div class="column is-2">
-          <nuxt-link to="/" class="button">Home</nuxt-link>
-        </div>
-        <div class="column is-2">
-          <nuxt-link to="/sobre-mi" class="button">Sobre mí</nuxt-link>
-        </div>
-        <div class="column is-2">
-          <nuxt-link to="/contacto" class="button">Contacto</nuxt-link>
-        </div>
-      </div>
-      <div class="columns">
-        <article class="column blog-post">
-          <header class="page-header">
-            <p class="date is-size-7">{{ formatDate(article.createdAt) }}</p>
-            <h1 class="title">
-              {{ article.title }}
-            </h1>
-            <cite>{{ article.description }}</cite>
-            <img class="image" :src="article.picture" :alt="article.alt" />
-          </header>
-          <nuxt-content :document="article" />
-          <TwitterShare :article="article" />
-          <Comments />
-          <SocialList />
-          <ColorMode />
-          <Footer />
-        </article>
-      </div>
-    </div>
-  </div>
-  <!-- <section class="section blog-page">
-    <h1 class="page-title title is-1 has-text-centered">
-    </h1>
-    <p class="date has-text-centered has-text-weight-light">
-      Publicado el {{ formatDate(article.updatedAt) }}
-    </p>
-    <div class="card section blog-page">
-      <article>
+    <ResponsiveNav />
+    <section class="container">
+      <Nav />
+    </section>
+    <section class="container">
+      <header class="page-header">
+        <p class="date is-size-7">{{ formatDate(article.createdAt) }}</p>
+        <h1 class="title">
+          {{ article.title }}
+        </h1>
+        <cite>{{ article.description }}</cite>
         <img class="image" :src="article.picture" :alt="article.alt" />
-        <div class="blog-content">
-          <BlogDescription :article="article" />
-          <section class="section content">
-            <hr />
-            <nuxt-content :document="article" />
-            <hr />
-            <TwitterShare :article="article" />
-            <Comments />
-            <Author :author="article.author" />
-          </section>
-        </div>
-      </article>
-    </div>
-    <Footer />
+      </header>
+    </section>
+    <section class="container">
+      <nuxt-content :document="article" />
+      <!-- <TwitterShare :article="article" /> -->
+    </section>
+    <SocialList />
     <ColorMode />
-  </section> -->
+    <Footer />
+  </div>
 </template>
 
 <script>
