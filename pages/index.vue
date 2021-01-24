@@ -102,7 +102,7 @@ export default {
   head() {
     return {
       title:
-        '🙋‍♂️ Roberto Serrano | 💻 Desarrollador Web en Tarragona | 🌍 robertoserrano.dev',
+        '🙋‍♂️ Roberto Serrano Diaz-Grande | 💻 Desarrollador Web en Tarragona',
     }
   },
 }

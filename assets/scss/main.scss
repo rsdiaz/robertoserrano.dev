@@ -397,9 +397,9 @@ div.about-intro {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    opacity: 0.4;
+    opacity: 0.8;
     &:hover {
-      opacity: 0.6;
+      opacity: 1;
     }
   }
 }
@@ -418,7 +418,7 @@ div.about-intro {
     display: block;
     margin: 0 auto;
     width: 58px;
-    stroke: bisque;
-    fill: white;
+    stroke: var(--link-color);
+    fill: var(--link-color);
   }
 }

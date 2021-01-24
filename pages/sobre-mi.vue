@@ -26,7 +26,7 @@
       </div>
     </section>
     <section class="container pt-6">
-      <h1 class="subtitle is-3 has-text-centered">Skills</h1>
+      <h1 class="subtitle is-3 has-text-centered">🏆 Skills</h1>
       <div class="columns">
         <div class="column is-4">
           <div class="skill">
@@ -93,9 +93,17 @@
           </div>
         </div>
       </div> -->
-      <Footer />
-      <ColorMode />
     </section>
+    <section class="container pt-6">
+      <h1 class="title is-1 has-text-centered">📨</h1>
+      <h1 class="subtitle is-3 has-text-centered">
+        ¿Quieres ponerte en contacto conmigo?
+      </h1>
+      <nuxt-link to="/contacto" class="button">Escríbeme</nuxt-link>
+    </section>
+    <SocialList />
+    <ColorMode />
+    <Footer />
   </div>
 </template>
 <script>
@@ -108,34 +116,34 @@ export default {
   },
   head() {
     return {
-      title: `Sobre mí | robertoserrano.dev`,
+      title: `Sobre mí | Roberto Serrano Diaz-Grande`,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Roberto Serrano | Desarrollador Web',
+          content: 'Roberto Serrano Diaz-Grande | Desarrollador Web',
         },
         // Open Graph
         {
           hid: 'og:title',
           property: 'og:title',
-          content: 'Sobre mí | robertoserrano.dev',
+          content: 'Sobre mí | Roberto Serrano Diaz-Grande',
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: 'Roberto Serrano | Desarrollador Web',
+          content: 'Roberto Serrano Diaz-Grande | Desarrollador Web',
         },
         // Twitter Card
         {
           hid: 'twitter:title',
           name: 'twitter:title',
-          content: 'Sobre mí | robertoserrano.dev',
+          content: 'Sobre mí | Roberto Serrano Diaz-Grande',
         },
         {
           hid: 'twitter:description',
           name: 'twitter:description',
-          content: 'Roberto Serrano | Desarrollador Web',
+          content: 'Roberto Serrano Diaz-Grande | Desarrollador Web',
         },
       ],
     }
