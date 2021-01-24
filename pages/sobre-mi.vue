@@ -2,6 +2,7 @@
   <div>
     <Animation />
     <TopAngle />
+    <ResponsiveNav />
     <Header :title="title" :subtitle="subtitle" />
     <section class="container pb-6">
       <div class="about-intro columns">

@@ -1,5 +1,5 @@
 <template>
-  <div class="columns is-variable pb-3 pt-5">
+  <div id="navbar" class="columns is-variable pb-3 pt-5 is-hidden-mobile">
     <div class="column is-2">
       <nuxt-link to="/" class="button">
         <IconHome />
