@@ -4,7 +4,7 @@
       <Nav />
       <div>
         <h1 class="title">{{ title }}</h1>
-        <h2 class="subtitle is-3">Roberto Serrano Diaz-Grande</h2>
+        <h2 class="subtitle is-3">{{ subtitle }}</h2>
         <div class="border-bottom"></div>
       </div>
     </div>

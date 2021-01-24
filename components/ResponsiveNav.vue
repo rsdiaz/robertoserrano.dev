@@ -7,8 +7,8 @@
     </div>
     <nav :class="{ menu_open: isOpen }" class="menu">
       <ul class="menu_list">
-        <li v-for="value in menuLinks" :key="value">
-          <nuxt-link :to="value.link">{{ value.text }}</nuxt-link>
+        <li v-for="(link, value) in menuLinks" :key="value">
+          <nuxt-link :to="link.link">{{ link.text }}</nuxt-link>
         </li>
       </ul>
     </nav>

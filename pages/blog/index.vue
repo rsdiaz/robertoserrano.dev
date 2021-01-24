@@ -1,31 +1,24 @@
 <template>
   <div>
+    <Animation />
     <TopAngle />
-    <div class="container">
-      <header>
-        <div class="container">
-          <Nav />
-        </div>
-      </header>
-      <div class="columns page">
-        <section class="column">
-          <header class="page-header">
-            <h1 class="title">Blog</h1>
-            <h2 class="subtitle is-3">
-              Aquí encontrarás mis artículos publicados
-            </h2>
-            <div class="border-bottom"></div>
-            <p>
-              En mi blog escribo artículos sobre desarrollo web y mi día a día
-              tecnológico. Puedes encontrar artículos sobre tecnologías web como
-              HTML, CSS, JavaScript, Node.js, herramientas de desarrollo, etc.
-            </p>
-            <p>
-              Pero también escribo sobre otros temas como servidores NAS,
-              Docker, GNU/Linux o simplemente artículos que quiero guardar para
-              una futura referencia.
-            </p>
-          </header>
+    <ResponsiveNav />
+    <Header :title="title" :subtitle="subtitle" />
+    <section class="container pb-6">
+      <p>
+        En mi blog escribo artículos sobre desarrollo web y mi día a día
+        tecnológico. Puedes encontrar artículos sobre tecnologías web como HTML,
+        CSS, JavaScript, Node.js, herramientas de desarrollo, etc.
+      </p>
+      <p>
+        Pero también escribo sobre otros temas como servidores NAS, Docker,
+        GNU/Linux o simplemente artículos que quiero guardar para una futura
+        referencia.
+      </p>
+    </section>
+    <section class="container">
+      <div class="columns">
+        <div class="column">
           <article
             v-for="(article, index) in articles"
             :key="index"
@@ -42,16 +35,16 @@
               <NuxtLink :to="`/blog/${article.slug}`"> Leer más</NuxtLink>
             </strong>
           </article>
-        </section>
+        </div>
         <aside class="column is-3">
           <h3 class="title is-4">Buscar artículos</h3>
           <Search />
         </aside>
       </div>
-      <SocialList />
-      <ColorMode />
-      <Footer />
-    </div>
+    </section>
+    <SocialList />
+    <ColorMode />
+    <Footer />
   </div>
 </template>
 <script>
@@ -59,6 +52,12 @@ export default {
   async asyncData({ $content }) {
     const articles = await $content('/blog').sortBy('createdAt', 'desc').fetch()
     return { articles }
+  },
+  data() {
+    return {
+      title: 'Blog',
+      subtitle: 'Aquí encontrarás artículos sobre desarrollo web',
+    }
   },
   methods: {
     goToArticle(slug) {
@@ -78,41 +77,5 @@ export default {
 }
 </script>
 <style lang="scss">
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
-section.section {
-  h1.title {
-    margin-bottom: 3rem;
-  }
-  h2.title {
-    margin-bottom: 0.5714em;
-  }
-}
-.content {
-  figure {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-.blog-list-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.blog-list-image {
-  img {
-    border-radius: 2px;
-  }
-}
-.blog-excerpt {
-  .date {
-    font-size: 0.85rem;
-  }
-}
+@import '~/assets/scss/pages/blog-index.scss';
 </style>

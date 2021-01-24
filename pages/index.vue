@@ -2,31 +2,24 @@
   <div>
     <Animation />
     <TopAngle />
-    <header>
-      <div class="container">
-        <Nav />
-        <div>
-          <h1 class="title">Roberto Serrano Diaz-Grande</h1>
-          <h2 class="subtitle is-3">Desarrollador Web | Tarragona</h2>
-          <div class="border-bottom"></div>
-          <p>
-            Desde 2012, llevo desarrollando aplicaciones web y he ayudado a
-            muchas personas a lograr cosas innovadoras en la Web. Principalmente
-            trabajo con herramientas y frameworks modernos como Wordpress,
-            VueJs, Angular...
-          </p>
-          <p>
-            Comparto mi aprendizaje y conocimiento a traves de mi
-            <nuxt-link to="/blog">blog</nuxt-link>, en el cual publico artículos
-            sobre desarrollo web y mi día a día tecnológico.
-          </p>
-          <p>
-            Cuando no estoy codificando o presionando botones, me encontrarás
-            pescando, destripando dispositivos o disfrutando de la naturaleza.
-          </p>
-        </div>
-      </div>
-    </header>
+    <ResponsiveNav />
+    <Header :title="title" :subtitle="subtitle" />
+    <section class="container pb-6">
+      <p>
+        Desde 2012, llevo desarrollando aplicaciones web y he ayudado a muchas
+        personas a lograr cosas innovadoras en la Web. Principalmente trabajo
+        con herramientas y frameworks modernos como Wordpress, VueJs, Angular...
+      </p>
+      <p>
+        Comparto mi aprendizaje y conocimiento a traves de mi
+        <nuxt-link to="/blog">blog</nuxt-link>, en el cual publico artículos
+        sobre desarrollo web y mi día a día tecnológico.
+      </p>
+      <p>
+        Cuando no estoy codificando o presionando botones, me encontrarás
+        pescando, destripando dispositivos o disfrutando de la naturaleza.
+      </p>
+    </section>
     <section>
       <div class="container">
         <div class="columns is-variable is-2-mobile is-0-tablet is-3-desktop">
@@ -98,6 +91,12 @@ export default {
       .sortBy('createdAt', 'desc')
       .fetch()
     return { articles }
+  },
+  data() {
+    return {
+      title: 'Roberto Serrano Diaz-Grande',
+      subtitle: 'Desarrollador Web | Tarragona',
+    }
   },
   head() {
     return {
