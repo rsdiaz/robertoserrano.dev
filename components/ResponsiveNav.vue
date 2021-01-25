@@ -33,6 +33,10 @@ export default {
           text: 'Sobre mí',
           link: '/sobre-mi',
         },
+        contact: {
+          text: 'Contacto',
+          link: '/contacto',
+        },
         gitHub: {
           text: 'GitHub',
           link: 'https://github.com/rsdiaz',
