@@ -12,7 +12,7 @@ author:
   img: https://res.cloudinary.com/rserrano/image/upload/v1598652059/roberto-serrano-desarrolloweb-tarragona.jpg
 ---
 
-Para quien no sepa que es Portainer, Portainer es una aplicación web desarrollada con Angular que sirve para gestionar contenedores Docker de manera visual.
+Para quién no sepa qué es Portainer, Portainer es una aplicación web desarrollada con Angular que sirve para gestionar contenedores Docker de manera visual.
 Yo lo conocí a través del curso en [YouTube sobre Docker en Qnap](https://www.youtube.com/watch?v=BuG_ghLhFV0&t=1s) de [@jmramirez](https://twitter.com/jmramirez) el cual recomiendo si quieres saber más sobre Docker.
 
 Portainer permite desde su interfaz actualizar contenedores Docker, esto suele funcionar en todos los contenedores, a excepción del propio Portainer. Es por eso que hay que realizar una actualización manual.

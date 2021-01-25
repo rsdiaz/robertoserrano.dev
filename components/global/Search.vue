@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="search">
     <input v-model="query" type="search" autocomplete="off" />
     <ul v-if="articles.length">
       <li
@@ -44,3 +44,6 @@ export default {
   },
 }
 </script>
+<style lang="scss">
+@import '~/assets/scss/components/search.scss';
+</style>

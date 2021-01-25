@@ -110,4 +110,9 @@ export default {
 .nuxt-content-highlight {
   margin: 1.2rem 0;
 }
+
+cite {
+  display: block;
+  margin-bottom: 1.5rem;
+}
 </style>
