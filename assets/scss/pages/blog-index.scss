@@ -1,6 +1,12 @@
 //
 // Styles for blog Page
 //
+
+h2.title {
+  .subtitle {
+    display: inline-block;
+  }
+}
 section.section.blog-page {
   max-width: 960px;
   margin: 0 auto;
@@ -90,4 +96,13 @@ section.section {
   img {
     border-radius: 2px;
   }
+}
+
+input[type='search'] {
+  width: 100%;
+  padding: 6px;
+  border: 2px solid var(--border-color);
+  border-radius: 2px;
+  background: var(--bg-primary);
+  color: var(--color);
 }

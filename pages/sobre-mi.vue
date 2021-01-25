@@ -100,7 +100,7 @@
       <h1 class="subtitle is-3 has-text-centered">
         ¿Quieres ponerte en contacto conmigo?
       </h1>
-      <nuxt-link to="/contacto" class="button">Escríbeme</nuxt-link>
+      <nuxt-link to="/contacto" class="button btn-site">Escríbeme</nuxt-link>
     </section>
     <SocialList />
     <ColorMode />

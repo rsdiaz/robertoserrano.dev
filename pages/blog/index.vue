@@ -17,6 +17,11 @@
       </p>
     </section>
     <section class="container">
+      <h2 class="title">
+        📝 Últimos
+        <span class="subtitle is-3">artículos</span>
+      </h2>
+
       <div class="columns">
         <div class="column">
           <article
@@ -37,7 +42,7 @@
           </article>
         </div>
         <aside class="column is-3">
-          <h3 class="title is-4">Buscar artículos</h3>
+          <h3 class="title is-4">🔍 Buscar artículos</h3>
           <Search />
         </aside>
       </div>
