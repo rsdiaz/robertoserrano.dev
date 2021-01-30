@@ -30,7 +30,8 @@
     "prism-themes": "^1.5.0",
     "sass-loader": "^9.0.3",
     "vue-clazy-load": "^0.4.2",
-    "vue-disqus": "^4.0.1"
+    "vue-disqus": "^4.0.1",
+    "vuelidate": "^0.7.6"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^1.1.1",
