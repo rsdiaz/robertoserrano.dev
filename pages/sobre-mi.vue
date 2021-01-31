@@ -103,7 +103,6 @@
       <nuxt-link to="/contacto" class="button btn-site">Escríbeme</nuxt-link>
     </section>
     <SocialList />
-    <ColorMode />
     <Footer />
   </div>
 </template>

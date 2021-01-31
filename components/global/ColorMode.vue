@@ -26,7 +26,7 @@
 <style lang="scss" scoped>
 ul {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 16px;
 }
 .feather {
@@ -34,10 +34,7 @@ ul {
   top: 0;
   cursor: pointer;
   padding: 6px;
-  background-color: var(--bg-secondary);
-  border: 2px solid var(--border-color);
   margin: 0;
-  border-radius: 5px;
   transition: all 0.1s ease;
   box-sizing: content-box;
   color: var(--color);
@@ -48,8 +45,6 @@ ul {
 }
 .feather.preferred {
   color: var(--link-color);
-  border-color: var(--color);
-  top: -3px;
 }
 .feather.selected {
   color: var(--link-color);

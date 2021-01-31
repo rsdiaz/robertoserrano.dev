@@ -5,6 +5,7 @@
 @import './variables/variables.scss';
 
 @import '~bulma/sass/base/_all.sass';
+@import '~bulma/sass/form/_all.sass';
 @import '~bulma/sass/helpers/_all.sass';
 @import '~bulma/sass/elements/title.sass';
 @import '~bulma/sass/layout/section.sass';
@@ -59,7 +60,7 @@ canvas {
   box-sizing: border-box !important;
   background-color: initial !important;
   border: 0 !important;
-  border-radius: 0 !important;
+  border-radius: 4px !important;
   box-shadow: inset 0 0 0 1px var(--color) !important;
   color: var(--color);
   cursor: pointer !important;

@@ -48,7 +48,6 @@
       </div>
     </section>
     <SocialList />
-    <ColorMode />
     <Footer />
   </div>
 </template>

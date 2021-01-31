@@ -21,7 +21,6 @@
       <!-- <TwitterShare :article="article" /> -->
     </section>
     <SocialList />
-    <ColorMode />
     <Footer />
   </div>
 </template>

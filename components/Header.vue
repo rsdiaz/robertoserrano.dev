@@ -2,6 +2,7 @@
   <header>
     <div class="container">
       <Nav />
+      <ColorMode />
       <div>
         <h1 class="title">{{ title }}</h1>
         <h2 class="subtitle is-3">{{ subtitle }}</h2>

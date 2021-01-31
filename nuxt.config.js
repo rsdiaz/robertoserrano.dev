@@ -71,6 +71,7 @@ export default {
     '~plugins/vue-clazy-load',
     '~/plugins/disqus',
     '~/plugins/particles',
+    '~/plugins/vuelidate',
   ],
   /*
    ** Auto import components

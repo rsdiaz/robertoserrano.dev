@@ -7,6 +7,7 @@
         con 💖 para el 🌍 © 2020
       </p>
       <span>Construido usando 💚 Nuxt, Particles.js & Bulma</span>
+      <p>Aviso Legal y Política de Privacidad</p>
     </div>
   </footer>
 </template>
