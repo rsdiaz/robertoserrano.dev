@@ -4,6 +4,9 @@
 div.about-intro {
   div.is-8 {
     margin-bottom: 3.8rem;
+    @include desktop {
+      padding-top: 38px;
+    }
   }
   div.is-4 {
     min-width: 300px;
@@ -15,6 +18,21 @@ div.about-intro {
     opacity: 0.8;
     &:hover {
       opacity: 1;
+    }
+  }
+}
+
+.skills {
+  div.column.is-4 {
+    margin-bottom: 18px;
+    background-color: var(--bg-fix);
+    border-radius: 12px;
+    @include desktop {
+      position: relative;
+      margin: 12px;
+      &:hover {
+        top: -3px;
+      }
     }
   }
 }

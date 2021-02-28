@@ -26,7 +26,7 @@
         <div class="column is-4"></div>
       </div>
     </section>
-    <section class="container pt-6">
+    <section class="container pt-6 skills">
       <h1 class="subtitle is-3 has-text-centered">🏆 Skills</h1>
       <div class="columns">
         <div class="column is-4">

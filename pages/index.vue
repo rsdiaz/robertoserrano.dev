@@ -20,63 +20,25 @@
         pescando, destripando dispositivos o disfrutando de la naturaleza.
       </p>
     </section>
-    <section>
-      <div class="container">
-        <div class="columns is-variable is-2-mobile is-0-tablet is-3-desktop">
-          <div class="column frontend">
-            <h2 class="is-size-3 has-text-weight-bold mb-3">Frontend</h2>
-            <div class="border-bottom"></div>
-            <ul>
-              <li>
-                <a href="">
-                  CSS Grid Template
-                  <span>Ejemplo de pagina web usando CSS Grid</span>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  Login page example
-                  <span>Pagina de inicio de sesión con CSS Grid y Flexbox</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="column backend">
-            <h2 class="is-size-3 has-text-weight-bold mb-3">Backend</h2>
-            <div class="border-bottom"></div>
-            <ul>
-              <li>
-                <a href="">
-                  node-clima
-                  <span>Modulo NodeJs escrito en TypeScript</span>
-                </a>
-                <a href="">
-                  WebSat
-                  <span>
-                    Sistema de gestión Web para servicio técnico informático,
-                    con NodeJs, Express, Handlebars y MySQL
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="column article">
-            <h2 class="is-size-3 has-text-weight-bold mb-3">Artículos</h2>
-            <div class="border-bottom"></div>
-            <a
-              v-for="(article, index) in articles"
-              :key="index"
-              :href="`/blog/${article.slug}`"
-              :style="[!index ? { display: 'flex' } : {}]"
-            >
-              <span>
-                {{ article.title }}
-              </span>
-              <span v-if="!index" class="tag">NUEVO</span>
-            </a>
-          </div>
+    <section class="container">
+      <h2 class="title">
+        📝 Últimos
+        <span class="subtitle is-3">artículos en el blog</span>
+      </h2>
+      <PostList :articles="articles" />
+      <!-- <div
+        v-for="(article, index) in articles"
+        :key="index"
+        class="container article post-list"
+      >
+        <div :style="[!index ? { display: 'flex' } : {}]">
+          <a :href="`/blog/${article.slug}`">
+            {{ article.title }}
+          </a>
+          <span v-if="!index" class="tag">NUEVO</span>
         </div>
-      </div>
+        <div class="date is-size-7">{{ formatDate(article.createdAt) }}</div>
+      </div> -->
     </section>
     <SocialList />
     <Footer />
@@ -97,11 +59,13 @@ export default {
       subtitle: 'Desarrollador Web | Tarragona',
     }
   },
-  head() {
-    return {
-      title:
-        '🙋‍♂️ Roberto Serrano Diaz-Grande | 💻 Desarrollador Web en Tarragona',
-    }
+  methods: {
+    head() {
+      return {
+        title:
+          '🙋‍♂️ Roberto Serrano Diaz-Grande | 💻 Desarrollador Web en Tarragona',
+      }
+    },
   },
 }
 </script>

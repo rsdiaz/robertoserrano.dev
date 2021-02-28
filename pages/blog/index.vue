@@ -17,7 +17,7 @@
       </p>
     </section>
     <section class="container">
-      <h2 class="title">
+      <h2 class="title mb-5">
         📝 Últimos
         <span class="subtitle is-3">artículos</span>
       </h2>

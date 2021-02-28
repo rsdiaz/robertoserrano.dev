@@ -12,6 +12,7 @@
         </li>
       </ul>
     </nav>
+    <ColorMode />
   </div>
 </template>
 <script>
@@ -36,14 +37,6 @@ export default {
         contact: {
           text: 'Contacto',
           link: '/contacto',
-        },
-        gitHub: {
-          text: 'GitHub',
-          link: 'https://github.com/rsdiaz',
-        },
-        twitter: {
-          text: 'Twitter',
-          link: 'https://twitter.com/Rovbeat',
         },
       },
     }

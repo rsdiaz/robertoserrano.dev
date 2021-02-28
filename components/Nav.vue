@@ -39,6 +39,26 @@
   </div>
 </template>
 
+<script>
+import IconHome from '~/components/global/icons/IconHome'
+import IconBook from '~/components/global/icons/IconBook'
+import IconUser from '~/components/global/icons/IconUser'
+import IconAt from '~/components/global/icons/IconAt'
+import IconGithub from '~/components/global/icons/IconGithub'
+import IconTwitter from '~/components/global/icons/IconTwitter'
+
+export default {
+  components: {
+    IconHome,
+    IconBook,
+    IconUser,
+    IconAt,
+    IconGithub,
+    IconTwitter,
+  },
+}
+</script>
+
 <style lang="scss">
 @import '~/assets/scss/components/nav.scss';
 </style>

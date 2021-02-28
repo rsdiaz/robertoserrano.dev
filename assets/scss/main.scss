@@ -104,26 +104,25 @@ canvas {
   }
 }
 
-.frontend,
-.backend,
-.article {
-  padding-top: 18px;
-  a {
-    font-weight: normal;
-  }
-  span {
-    display: block;
-    font-size: 0.8rem;
-    margin-bottom: 10px;
-    &.tag {
-      height: 24px;
-      padding: 2px;
-      margin-left: 5px;
-      background: var(--link-color);
-      color: #fff;
-      font-weight: bold;
+span {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  &.tag {
+    height: 24px;
+    padding: 5px;
+    background: var(--link-color);
+    color: #fff;
+    font-weight: bold;
+    @include desktop {
+      margin-left: 2rem;
+      margin-bottom: 0;
     }
   }
+}
+
+span.subtitle {
+  display: inline;
 }
 
 .date {
@@ -154,6 +153,9 @@ hr {
 
 p {
   margin-bottom: 1.5rem;
+  @include desktop {
+    font-size: 1.2rem;
+  }
 }
 
 .columns {

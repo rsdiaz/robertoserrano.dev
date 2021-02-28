@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="is-hidden-mobile">
     <ul>
       <li
         v-for="color of colors"
