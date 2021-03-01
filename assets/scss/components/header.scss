@@ -1,9 +1,13 @@
 header {
   margin-top: 2.5rem;
   h2.subtitle:not(:last-child) {
+    margin-top: -12px;
     margin-bottom: 10px;
   }
   div.container {
     padding-bottom: 0;
+  }
+  .columns.is-multiline  {
+    flex-wrap: wrap-reverse;
   }
 }

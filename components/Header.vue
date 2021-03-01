@@ -2,12 +2,16 @@
   <header>
     <div class="container">
       <Nav />
-      <ColorMode />
-      <div>
-        <h1 class="title">{{ title }}</h1>
-        <h2 class="subtitle is-3">{{ subtitle }}</h2>
-        <div class="border-bottom"></div>
+      <div class="columns is-multiline is-mobile">
+        <div class="column is-full-mobile is-four-fifths-desktop">
+          <h1 class="title">{{ title }}</h1>
+        </div>
+        <div class="column">
+          <ColorMode />
+        </div>
       </div>
+      <h2 class="subtitle is-3">{{ subtitle }}</h2>
+      <div class="border-bottom"></div>
     </div>
   </header>
 </template>

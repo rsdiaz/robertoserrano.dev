@@ -1,5 +1,5 @@
 <template>
-  <div class="is-hidden-mobile">
+  <div class="">
     <ul>
       <li
         v-for="color of colors"
@@ -24,31 +24,7 @@
   </div>
 </template>
 <style lang="scss" scoped>
-ul {
-  display: flex;
-  justify-content: flex-end;
-  gap: 16px;
-}
-.feather {
-  position: relative;
-  top: 0;
-  cursor: pointer;
-  padding: 6px;
-  margin: 0;
-  transition: all 0.1s ease;
-  box-sizing: content-box;
-  color: var(--color);
-  &:hover {
-    top: -3px;
-    color: var(--link-color);
-  }
-}
-.feather.preferred {
-  color: var(--link-color);
-}
-.feather.selected {
-  color: var(--link-color);
-}
+@import '~/assets/scss/components/color-mode.scss';
 </style>
 
 <script>

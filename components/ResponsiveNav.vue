@@ -12,7 +12,6 @@
         </li>
       </ul>
     </nav>
-    <ColorMode />
   </div>
 </template>
 <script>
