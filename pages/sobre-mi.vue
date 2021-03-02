@@ -1,8 +1,5 @@
 <template>
   <div>
-    <Animation />
-    <TopAngle />
-    <ResponsiveNav />
     <Header :title="title" :subtitle="subtitle" />
     <section class="container pb-6">
       <div class="about-intro columns">
@@ -102,8 +99,6 @@
       </h1>
       <nuxt-link to="/contacto" class="button btn-site">Escríbeme</nuxt-link>
     </section>
-    <SocialList />
-    <Footer />
   </div>
 </template>
 <script>

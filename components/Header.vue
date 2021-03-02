@@ -1,7 +1,6 @@
 <template>
   <header>
     <div class="container">
-      <Nav />
       <div class="columns is-multiline is-mobile">
         <div class="column is-full-mobile is-four-fifths-desktop">
           <h1 class="title">{{ title }}</h1>

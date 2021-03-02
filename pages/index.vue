@@ -1,8 +1,5 @@
 <template>
   <div>
-    <Animation />
-    <TopAngle />
-    <ResponsiveNav />
     <Header :title="title" :subtitle="subtitle" />
     <section class="container pb-6">
       <p>
@@ -28,8 +25,6 @@
       <PostList :articles="articles" />
       <nuxt-link to="/blog" class="button">Leer todos los artículos</nuxt-link>
     </section>
-    <SocialList />
-    <Footer />
   </div>
 </template>
 <script>

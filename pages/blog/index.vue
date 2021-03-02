@@ -1,8 +1,5 @@
 <template>
   <div>
-    <Animation />
-    <TopAngle />
-    <ResponsiveNav />
     <Header :title="title" :subtitle="subtitle" />
     <section class="container pb-6">
       <p>
@@ -47,8 +44,6 @@
         </aside>
       </div>
     </section>
-    <SocialList />
-    <Footer />
   </div>
 </template>
 <script>

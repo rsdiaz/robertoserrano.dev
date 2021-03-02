@@ -1,11 +1,5 @@
 <template>
   <div>
-    <Animation />
-    <TopAngle />
-    <ResponsiveNav />
-    <section class="container">
-      <Nav />
-    </section>
     <section class="container">
       <header class="page-header">
         <p class="date is-size-7">{{ formatDate(article.createdAt) }}</p>
@@ -20,8 +14,6 @@
       <nuxt-content :document="article" />
       <!-- <TwitterShare :article="article" /> -->
     </section>
-    <SocialList />
-    <Footer />
   </div>
 </template>
 
