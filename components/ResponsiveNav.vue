@@ -8,7 +8,7 @@
     <nav :class="{ menu_open: isOpen }" class="menu">
       <ul class="menu_list">
         <li v-for="(link, value) in menuLinks" :key="value">
-          <a :href="link.link" @click="onClick">{{ link.text }}</a>
+          <a :href="link.link">{{ link.text }}</a>
         </li>
       </ul>
     </nav>

@@ -45,8 +45,7 @@ export default {
   methods: {},
   head() {
     return {
-      title:
-        '🙋‍♂️ Roberto Serrano Diaz-Grande | 💻 Desarrollador Web en Tarragona',
+      title: 'Roberto Serrano Diaz-Grande | 💻 Desarrollador Web en Tarragona',
     }
   },
 }

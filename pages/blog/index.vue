@@ -70,8 +70,10 @@ export default {
       return Number.isInteger(Math.pow(index, 3) / 3)
     },
   },
-  head: {
-    title: 'Roberto Serrano | Blog | robertoserrano.dev',
+  head() {
+    return {
+      title: `Roberto Serrano Diaz-Grande | ${this.title}`,
+    }
   },
 }
 </script>

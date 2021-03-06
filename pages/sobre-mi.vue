@@ -48,7 +48,7 @@ export default {
   },
   head() {
     return {
-      title: `Sobre mí | Roberto Serrano Diaz-Grande`,
+      title: `Roberto Serrano Diaz-Grande | ${this.title}`,
       meta: [
         {
           hid: 'description',

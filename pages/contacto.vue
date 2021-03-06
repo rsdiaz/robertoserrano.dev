@@ -9,7 +9,7 @@
       </p>
       <p>
         Escríbeme si estas interesado en mis servicios, si tienes alguna duda o
-        simplemente si quieres saludarme.Una vez reciba tu mensaje, no tardare
+        simplemente si quieres saludarme. Una vez reciba tu mensaje, no tardare
         mucho en responderte. 👍
       </p>
     </section>
@@ -32,6 +32,11 @@ export default {
     return {
       title: 'Contacto',
       subtitle: 'Pagina de contacto',
+    }
+  },
+  head() {
+    return {
+      title: `Roberto Serrano Diaz-Grande | ${this.title}`,
     }
   },
 }
