@@ -1,11 +1,18 @@
 .burger {
   position: fixed;
   z-index: 10;
-  right: 25px;
-  top: 35px;
+  right: 12px;
+  top: 58px;
   cursor: pointer;
   transform: rotateY(0);
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  padding: 12px 8px 8px 8px;
+  background-color: var(--bg-primary);
+  border-radius: 5px;
+  &.close {
+    background-color: var(--link-color);
+    border: none;
+  }
 }
 .burger .patty {
   width: 28px;

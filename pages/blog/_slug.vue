@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <article>
     <section class="container">
       <header class="page-header">
         <p class="date is-size-7">{{ formatDate(article.createdAt) }}</p>
@@ -14,7 +14,7 @@
       <nuxt-content :document="article" />
       <!-- <TwitterShare :article="article" /> -->
     </section>
-  </div>
+  </article>
 </template>
 
 <script>
@@ -31,7 +31,7 @@ export default {
   },
   head() {
     return {
-      title: `${this.article.title} | robertoserrano.dev`,
+      title: `${this.article.title} | Roberto Serrano Diaz-Grande`,
       meta: [
         {
           hid: 'description',
@@ -66,10 +66,8 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.section.blog-page {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 1.5rem 1.5rem;
+article {
+  margin-top: 2.5rem;
 }
 
 .card.author-card {
