@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div id="navbar" class="columns is-variable pb-3 pt-5 is-hidden-mobile">
+    <div id="navbar" class="columns is-variable pb-3 pt-5 is-hidden-touch">
       <div class="column is-2">
         <nuxt-link to="/" class="button">
           <IconHome />
@@ -26,16 +26,16 @@
         </nuxt-link>
       </div>
       <div class="column is-2">
-        <nuxt-link to="/contacto" class="button">
+        <a href="https://github.com/rsdiaz" class="button">
           <IconGithub />
           Github
-        </nuxt-link>
+        </a>
       </div>
       <div class="column is-2">
-        <nuxt-link to="/contacto" class="button">
+        <a href="https://twitter.com/Rovbeat" class="button">
           <IconTwitter />
           Twitter
-        </nuxt-link>
+        </a>
       </div>
     </div>
   </div>

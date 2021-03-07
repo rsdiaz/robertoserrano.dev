@@ -39,14 +39,6 @@ canvas {
   top: 0;
 }
 
-#top-angle {
-  position: relative;
-  z-index: 9;
-  height: 43px;
-  background: var(--link-color);
-  transform: skewY(1deg) translateY(-19px);
-}
-
 .title {
   letter-spacing: -0.022rem;
 }
@@ -99,7 +91,7 @@ canvas {
 }
 
 .container {
-  @include mobile {
+  @include touch {
     padding: 18px;
   }
 }

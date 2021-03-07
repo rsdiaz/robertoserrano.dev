@@ -1,0 +1,7 @@
+#top-angle {
+  position: relative;
+  z-index: 9;
+  height: 43px;
+  background: var(--link-color);
+  transform: skewY(1deg) translateY(-19px);
+}
