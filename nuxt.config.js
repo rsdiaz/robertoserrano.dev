@@ -1,3 +1,8 @@
+import global from './utils/global'
+import getSiteMeta from './utils/getSiteMeta'
+
+const meta = getSiteMeta()
+
 /* eslint-disable no-dupe-keys */
 export default {
   /*
@@ -17,12 +22,13 @@ export default {
       lang: 'es-ES',
     },
     meta: [
+      ...meta,
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content: global.siteDesc || '',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
